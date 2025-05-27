@@ -1,0 +1,34 @@
+<skeletons version="1" tgspath="Inimigo.xstage">
+ <skeleton name="Master-P">
+  <nodes>
+   <peg id="0" name="Master-P"/>
+   <peg id="1" name="Pauzitos-G_Pauzitos-P"/>
+   <peg id="2" name="Pauzitos-G_Corpo-P"/>
+   <peg id="3" name="Pauzitos-G_SombraCelha_D-P"/>
+   <read id="4" name="Pauzitos-G_SombraCelha_D" visible="true"/>
+   <peg id="5" name="Pauzitos-G_SombraCelha_E-P"/>
+   <read id="6" name="Pauzitos-G_SombraCelha_E" visible="true"/>
+   <peg id="7" name="Pauzitos-G_Olho_d-P"/>
+   <read id="8" name="Pauzitos-G_Olho_d" visible="true"/>
+   <peg id="9" name="Pauzitos-G_Olho_e-P"/>
+   <read id="10" name="Pauzitos-G_Olho_e" visible="true"/>
+   <read id="11" name="Pauzitos-G_Corpo" visible="true"/>
+   <read id="12" name="Pauzitos-G_Pauzitos" visible="true"/>
+  </nodes>
+  <links>
+   <link in="Top" out="0" port="0"/>
+   <link in="0" out="1" port="0"/>
+   <link in="1" out="2" port="0"/>
+   <link in="2" out="3" port="0"/>
+   <link in="3" out="4" port="0"/>
+   <link in="2" out="5" port="0"/>
+   <link in="5" out="6" port="0"/>
+   <link in="2" out="7" port="0"/>
+   <link in="7" out="8" port="0"/>
+   <link in="2" out="9" port="0"/>
+   <link in="9" out="10" port="0"/>
+   <link in="2" out="11" port="0"/>
+   <link in="1" out="12" port="0"/>
+  </links>
+ </skeleton>
+</skeletons>

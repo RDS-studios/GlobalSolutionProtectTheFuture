@@ -1,0 +1,50 @@
+<spritesheets>
+ <spritesheet filename="spriteSheets/sheet_Inimigo-HD-Inimigo.png" width="1024" height="512" resolution="HD-Inimigo" name="sheet_Inimigo">
+  <sprite rect="374,0,597,461" scaleX="1.5" scaleY="1.5" name="Corpo_1.png" offsetY="-102.5055" angleDegrees="0" offsetX="7.1339998"/>
+  <sprite rect="295,0,79,395" scaleX="1.5" scaleY="1.5" name="Pauzitos_1.png" offsetY="-422.91901" angleDegrees="0" offsetX="-20.953501"/>
+  <sprite rect="203,0,92,114" scaleX="1.5" scaleY="1.5" name="Olho_d_1.png" offsetY="-86.829002" angleDegrees="0" offsetX="-98.845497"/>
+  <sprite rect="111,0,92,114" scaleX="1.5" scaleY="1.5" name="Olho_e_1.png" offsetY="-90.162003" angleDegrees="0" offsetX="109.6875"/>
+  <sprite rect="57,0,54,47" scaleX="1.5" scaleY="1.5" name="SombraCelha_D_1.png" offsetY="-20.493" angleDegrees="0" offsetX="117.6435"/>
+  <sprite rect="0,0,57,46" scaleX="1.5" scaleY="1.5" name="SombraCelha_E_1.png" offsetY="-15.774" angleDegrees="0" offsetX="-108.966"/>
+ </spritesheet>
+ <spritesheet filename="spriteSheets/sheet_Inimigo-HD-Teste_1.png" width="1024" height="512" resolution="HD-Teste_1" name="sheet_Inimigo">
+  <sprite rect="374,0,597,461" scaleX="1.5" scaleY="1.5" name="Corpo_1.png" offsetY="-102.5055" angleDegrees="0" offsetX="7.1339998"/>
+  <sprite rect="295,0,79,395" scaleX="1.5" scaleY="1.5" name="Pauzitos_1.png" offsetY="-422.91901" angleDegrees="0" offsetX="-20.953501"/>
+  <sprite rect="203,0,92,114" scaleX="1.5" scaleY="1.5" name="Olho_d_1.png" offsetY="-86.829002" angleDegrees="0" offsetX="-98.845497"/>
+  <sprite rect="111,0,92,114" scaleX="1.5" scaleY="1.5" name="Olho_e_1.png" offsetY="-90.162003" angleDegrees="0" offsetX="109.6875"/>
+  <sprite rect="57,0,54,47" scaleX="1.5" scaleY="1.5" name="SombraCelha_D_1.png" offsetY="-20.493" angleDegrees="0" offsetX="117.6435"/>
+  <sprite rect="0,0,57,46" scaleX="1.5" scaleY="1.5" name="SombraCelha_E_1.png" offsetY="-15.774" angleDegrees="0" offsetX="-108.966"/>
+ </spritesheet>
+ <spritesheet filename="spriteSheets/sheet_Inimigo-FullHD-Inimigo.png" width="2048" height="1024" resolution="FullHD-Inimigo" name="sheet_Inimigo">
+  <sprite rect="532,0,890,686" scaleX="1" scaleY="1" name="Corpo_1.png" offsetY="-153.75826" angleDegrees="0" offsetX="10.701"/>
+  <sprite rect="419,0,113,587" scaleX="1" scaleY="1" name="Pauzitos_1.png" offsetY="-634.37848" angleDegrees="0" offsetX="-31.43025"/>
+  <sprite rect="287,0,132,165" scaleX="1" scaleY="1" name="Olho_d_1.png" offsetY="-130.2435" angleDegrees="0" offsetX="-148.26825"/>
+  <sprite rect="155,0,132,165" scaleX="1" scaleY="1" name="Olho_e_1.png" offsetY="-135.243" angleDegrees="0" offsetX="164.53125"/>
+  <sprite rect="80,0,75,64" scaleX="1" scaleY="1" name="SombraCelha_D_1.png" offsetY="-30.7395" angleDegrees="0" offsetX="176.46526"/>
+  <sprite rect="0,0,80,63" scaleX="1" scaleY="1" name="SombraCelha_E_1.png" offsetY="-23.660999" angleDegrees="0" offsetX="-163.44901"/>
+ </spritesheet>
+ <spritesheet filename="spriteSheets/sheet_Inimigo-FullHD-Teste_1.png" width="2048" height="1024" resolution="FullHD-Teste_1" name="sheet_Inimigo">
+  <sprite rect="532,0,890,686" scaleX="1" scaleY="1" name="Corpo_1.png" offsetY="-153.75826" angleDegrees="0" offsetX="10.701"/>
+  <sprite rect="419,0,113,587" scaleX="1" scaleY="1" name="Pauzitos_1.png" offsetY="-634.37848" angleDegrees="0" offsetX="-31.43025"/>
+  <sprite rect="287,0,132,165" scaleX="1" scaleY="1" name="Olho_d_1.png" offsetY="-130.2435" angleDegrees="0" offsetX="-148.26825"/>
+  <sprite rect="155,0,132,165" scaleX="1" scaleY="1" name="Olho_e_1.png" offsetY="-135.243" angleDegrees="0" offsetX="164.53125"/>
+  <sprite rect="80,0,75,64" scaleX="1" scaleY="1" name="SombraCelha_D_1.png" offsetY="-30.7395" angleDegrees="0" offsetX="176.46526"/>
+  <sprite rect="0,0,80,63" scaleX="1" scaleY="1" name="SombraCelha_E_1.png" offsetY="-23.660999" angleDegrees="0" offsetX="-163.44901"/>
+ </spritesheet>
+ <spritesheet filename="spriteSheets/sheet_Inimigo-QuadHD-Inimigo.png" width="2048" height="1024" resolution="QuadHD-Inimigo" name="sheet_Inimigo">
+  <sprite rect="693,0,1183,911" scaleX="0.75" scaleY="0.75" name="Corpo_1.png" offsetY="-205.011" angleDegrees="0" offsetX="14.268"/>
+  <sprite rect="546,0,147,779" scaleX="0.75" scaleY="0.75" name="Pauzitos_1.png" offsetY="-845.83801" angleDegrees="0" offsetX="-41.907001"/>
+  <sprite rect="373,0,173,216" scaleX="0.75" scaleY="0.75" name="Olho_d_1.png" offsetY="-173.658" angleDegrees="0" offsetX="-197.69099"/>
+  <sprite rect="200,0,173,216" scaleX="0.75" scaleY="0.75" name="Olho_e_1.png" offsetY="-180.32401" angleDegrees="0" offsetX="219.375"/>
+  <sprite rect="103,0,97,82" scaleX="0.75" scaleY="0.75" name="SombraCelha_D_1.png" offsetY="-40.986" angleDegrees="0" offsetX="235.287"/>
+  <sprite rect="0,0,103,80" scaleX="0.75" scaleY="0.75" name="SombraCelha_E_1.png" offsetY="-31.548" angleDegrees="0" offsetX="-217.93201"/>
+ </spritesheet>
+ <spritesheet filename="spriteSheets/sheet_Inimigo-QuadHD-Teste_1.png" width="2048" height="1024" resolution="QuadHD-Teste_1" name="sheet_Inimigo">
+  <sprite rect="693,0,1183,911" scaleX="0.75" scaleY="0.75" name="Corpo_1.png" offsetY="-205.011" angleDegrees="0" offsetX="14.268"/>
+  <sprite rect="546,0,147,779" scaleX="0.75" scaleY="0.75" name="Pauzitos_1.png" offsetY="-845.83801" angleDegrees="0" offsetX="-41.907001"/>
+  <sprite rect="373,0,173,216" scaleX="0.75" scaleY="0.75" name="Olho_d_1.png" offsetY="-173.658" angleDegrees="0" offsetX="-197.69099"/>
+  <sprite rect="200,0,173,216" scaleX="0.75" scaleY="0.75" name="Olho_e_1.png" offsetY="-180.32401" angleDegrees="0" offsetX="219.375"/>
+  <sprite rect="103,0,97,82" scaleX="0.75" scaleY="0.75" name="SombraCelha_D_1.png" offsetY="-40.986" angleDegrees="0" offsetX="235.287"/>
+  <sprite rect="0,0,103,80" scaleX="0.75" scaleY="0.75" name="SombraCelha_E_1.png" offsetY="-31.548" angleDegrees="0" offsetX="-217.93201"/>
+ </spritesheet>
+</spritesheets>
