@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1100157504726758043
+--- !u!1 &5138720865387617898
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,11 +8,11 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8545917977879754816}
-  - component: {fileID: 5517323082332629055}
-  - component: {fileID: 4485922525341842164}
-  - component: {fileID: 3745497276982400445}
-  - component: {fileID: 8852469230775740329}
+  - component: {fileID: 5550801811357380828}
+  - component: {fileID: 5485980265898440796}
+  - component: {fileID: 8065210704594449558}
+  - component: {fileID: 5951108162218620993}
+  - component: {fileID: 6344806487820204913}
   m_Layer: 0
   m_Name: inimigoSlime
   m_TagString: Untagged
@@ -20,13 +20,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8545917977879754816
+--- !u!4 &5550801811357380828
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1100157504726758043}
+  m_GameObject: {fileID: 5138720865387617898}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -35,13 +35,13 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &5517323082332629055
+--- !u!23 &5485980265898440796
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1100157504726758043}
+  m_GameObject: {fileID: 5138720865387617898}
   m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -80,27 +80,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &4485922525341842164
+--- !u!33 &8065210704594449558
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1100157504726758043}
+  m_GameObject: {fileID: 5138720865387617898}
   m_Mesh: {fileID: 0}
---- !u!114 &3745497276982400445
+--- !u!114 &5951108162218620993
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1100157504726758043}
+  m_GameObject: {fileID: 5138720865387617898}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bcc1a1e06bb8d4eb88f4e236d92662c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Project: {fileID: 11400000, guid: dabbc4adcbbf8ff45a92498f43c74728, type: 2}
+  Project: {fileID: 11400000, guid: 37e6eb2fe61e99743924d765145a4c67, type: 2}
   SpriteSheetIndex: 0
   Material: {fileID: 2100000, guid: 459683e483e91c84b9e54f31e0fef25b, type: 2}
   Color: {r: 1, g: 1, b: 1, a: 1}
@@ -137,17 +137,17 @@ MonoBehaviour:
     _item7:
       GroupId: 0
       SkinId: 0
---- !u!95 &8852469230775740329
+--- !u!95 &6344806487820204913
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1100157504726758043}
+  m_GameObject: {fileID: 5138720865387617898}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: cf80bfafdd194064990e8c15b933b179, type: 2}
+  m_Controller: {fileID: 9100000, guid: e0c37e1d459caa444bed07da7ece367c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

@@ -35,4 +35,5 @@ MonoBehaviour:
   - name: Esguicho
     volume: 1
     mixer: {fileID: 0}
-    sounds: []
+    sounds:
+    - {fileID: 8300000, guid: 892793a4596d28441ae383a309a663c2, type: 3}
