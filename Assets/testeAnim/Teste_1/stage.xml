@@ -1,0 +1,19 @@
+<stages version="1">
+ <stage name="Default" unitWidth="1920" unitHeight="1080" resolutionWidth="1920" resolutionHeight="1080">
+  <skin skinId="0" name="none"/>
+  <node drwId="1" name="Mao-P-G_Mao" groupId="0" skinId="0"/>
+  <node drwId="2" name="Mao-P-G_Braco_E" groupId="0" skinId="0"/>
+  <node drwId="3" name="Mao-P-G_Corpo" groupId="0" skinId="0"/>
+  <node drwId="4" name="Mao-P-G_Dente" groupId="0" skinId="0"/>
+  <node drwId="5" name="Mao-P-G_Boca" groupId="0" skinId="0"/>
+  <node drwId="6" name="Mao-P-G_Braco_D" groupId="0" skinId="0"/>
+  <node drwId="7" name="Mao-P-G_Orelha_E" groupId="0" skinId="0"/>
+  <node drwId="8" name="Mao-P-G_Olho_E" groupId="0" skinId="0"/>
+  <node drwId="9" name="Mao-P-G_Orelha_D" groupId="0" skinId="0"/>
+  <node drwId="10" name="Mao-P-G_Pupila_E" groupId="0" skinId="0"/>
+  <node drwId="11" name="Mao-P-G_Nariz" groupId="0" skinId="0"/>
+  <node drwId="12" name="Mao-P-G_Olho_D" groupId="0" skinId="0"/>
+  <node drwId="13" name="Mao-P-G_Pupila_D" groupId="0" skinId="0"/>
+  <play name="Default" skeleton="Master-P" animation="Default" drawingAnimation="Default" framerate="24" markerLength="162"/>
+ </stage>
+</stages>

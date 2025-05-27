@@ -1,0 +1,468 @@
+fileFormatVersion: 2
+guid: f00ca8452ad836b43b80fbb74749ef52
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4104776020895504892
+    second: sheet_Teste_1.2-QuadHD-Teste_1_0
+  - first:
+      213: -8303052553616515295
+    second: sheet_Teste_1.2-QuadHD-Teste_1_1
+  - first:
+      213: 1401962275090460152
+    second: sheet_Teste_1.2-QuadHD-Teste_1_2
+  - first:
+      213: 5092076733397078762
+    second: sheet_Teste_1.2-QuadHD-Teste_1_3
+  - first:
+      213: -4548233044797351772
+    second: sheet_Teste_1.2-QuadHD-Teste_1_4
+  - first:
+      213: -688973331250322175
+    second: sheet_Teste_1.2-QuadHD-Teste_1_5
+  - first:
+      213: 2291985344844352670
+    second: sheet_Teste_1.2-QuadHD-Teste_1_6
+  - first:
+      213: 5598311198911164981
+    second: sheet_Teste_1.2-QuadHD-Teste_1_7
+  - first:
+      213: -2557404826403471467
+    second: sheet_Teste_1.2-QuadHD-Teste_1_8
+  - first:
+      213: -6048375949379507992
+    second: sheet_Teste_1.2-QuadHD-Teste_1_9
+  - first:
+      213: 4836543552644584053
+    second: sheet_Teste_1.2-QuadHD-Teste_1_10
+  - first:
+      213: 1892713250069741936
+    second: sheet_Teste_1.2-QuadHD-Teste_1_11
+  - first:
+      213: 377080753629518139
+    second: sheet_Teste_1.2-QuadHD-Teste_1_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sheet_Teste_1.2-QuadHD-Teste_1_0
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 1971
+        width: 78
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf994000b0817f830800000000000000
+      internalID: 4104776020895504892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Teste_1.2-QuadHD-Teste_1_1
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 1971
+        width: 78
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12f9946a1b1a5cc80800000000000000
+      internalID: -8303052553616515295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Teste_1.2-QuadHD-Teste_1_2
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 1934
+        width: 416
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fde343e245c47310800000000000000
+      internalID: 1401962275090460152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Teste_1.2-QuadHD-Teste_1_3
+      rect:
+        serializedVersion: 2
+        x: 1081
+        y: 1928
+        width: 313
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae21a2f5fc0baa640800000000000000
+      internalID: 5092076733397078762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Teste_1.2-QuadHD-Teste_1_4
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 1927
+        width: 311
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a81921b42e61e0c0800000000000000
+      internalID: -4548233044797351772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Teste_1.2-QuadHD-Teste_1_5
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 1853
+        width: 237
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1056b13d7664076f0800000000000000
+      internalID: -688973331250322175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Teste_1.2-QuadHD-Teste_1_6
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1660
+        width: 142
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9c49d51784cecf10800000000000000
+      internalID: 2291985344844352670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Teste_1.2-QuadHD-Teste_1_7
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1652
+        width: 172
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 532f031df5231bd40800000000000000
+      internalID: 5598311198911164981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Teste_1.2-QuadHD-Teste_1_8
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 1626
+        width: 289
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59ff95f2cd5428cd0800000000000000
+      internalID: -2557404826403471467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Teste_1.2-QuadHD-Teste_1_9
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 1626
+        width: 194
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e8e735ae1adf0ca0800000000000000
+      internalID: -6048375949379507992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Teste_1.2-QuadHD-Teste_1_10
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 1616
+        width: 190
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 572161c6cbade1340800000000000000
+      internalID: 4836543552644584053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Teste_1.2-QuadHD-Teste_1_11
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 899
+        width: 586
+        height: 945
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07105144ca4444a10800000000000000
+      internalID: 1892713250069741936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Teste_1.2-QuadHD-Teste_1_12
+      rect:
+        serializedVersion: 2
+        x: 1683
+        y: 26
+        width: 280
+        height: 1804
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3959b392f8ab3500800000000000000
+      internalID: 377080753629518139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      sheet_Teste_1.2-QuadHD-Teste_1_0: 4104776020895504892
+      sheet_Teste_1.2-QuadHD-Teste_1_1: -8303052553616515295
+      sheet_Teste_1.2-QuadHD-Teste_1_10: 4836543552644584053
+      sheet_Teste_1.2-QuadHD-Teste_1_11: 1892713250069741936
+      sheet_Teste_1.2-QuadHD-Teste_1_12: 377080753629518139
+      sheet_Teste_1.2-QuadHD-Teste_1_2: 1401962275090460152
+      sheet_Teste_1.2-QuadHD-Teste_1_3: 5092076733397078762
+      sheet_Teste_1.2-QuadHD-Teste_1_4: -4548233044797351772
+      sheet_Teste_1.2-QuadHD-Teste_1_5: -688973331250322175
+      sheet_Teste_1.2-QuadHD-Teste_1_6: 2291985344844352670
+      sheet_Teste_1.2-QuadHD-Teste_1_7: 5598311198911164981
+      sheet_Teste_1.2-QuadHD-Teste_1_8: -2557404826403471467
+      sheet_Teste_1.2-QuadHD-Teste_1_9: -6048375949379507992
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

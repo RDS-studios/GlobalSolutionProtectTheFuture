@@ -1,0 +1,47 @@
+<spritesheets>
+ <spritesheet width="2048" height="1024" filename="spriteSheets/sheet_Teste_1.2-HD-Teste_1.png" resolution="HD-Teste_1" name="sheet_Teste_1.2">
+  <sprite rect="1654,0,149,919" offsetY="-682.95148" angleDegrees="0" offsetX="-61.165501" name="Mao_1.png" scaleY="1.5" scaleX="1.5"/>
+  <sprite rect="1339,0,315,484" offsetY="-65.827499" angleDegrees="0" offsetX="-54.670502" name="Corpo_1.png" scaleY="1.5" scaleX="1.5"/>
+  <sprite rect="1231,0,108,124" offsetY="197.0025" angleDegrees="0" offsetX="-79.107002" name="Orelha_D_2.png" scaleY="1.5" scaleX="1.5"/>
+  <sprite rect="1114,0,117,123" offsetY="163.983" angleDegrees="0" offsetX="123.636" name="Orelha_E_2.png" scaleY="1.5" scaleX="1.5"/>
+  <sprite rect="960,0,154,119" offsetY="-146.99699" angleDegrees="0" offsetX="115.8645" name="Braco_E_1.png" scaleY="1.5" scaleX="1.5"/>
+  <sprite rect="862,0,98,107" offsetY="115.7505" angleDegrees="0" offsetX="10.2465" name="Olho_D_1.png" scaleY="1.5" scaleX="1.5"/>
+  <sprite rect="734,0,128,106" offsetY="-54.050999" angleDegrees="0" offsetX="-208.0425" name="Braco_D_1.png" scaleY="1.5" scaleX="1.5"/>
+  <sprite rect="651,0,83,103" offsetY="110.205" angleDegrees="0" offsetX="97.291496" name="Olho_E_1.png" scaleY="1.5" scaleX="1.5"/>
+  <sprite rect="483,0,168,68" offsetY="58.223999" angleDegrees="0" offsetX="113.847" name="Nariz_1.png" scaleY="1.5" scaleX="1.5"/>
+  <sprite rect="317,0,166,68" offsetY="14.1465" angleDegrees="0" offsetX="37.309502" name="Dente_1.png" scaleY="1.5" scaleX="1.5"/>
+  <sprite rect="98,0,219,65" offsetY="34.915501" angleDegrees="0" offsetX="11.04" name="Boca_1.png" scaleY="1.5" scaleX="1.5"/>
+  <sprite rect="49,0,49,46" offsetY="114.789" angleDegrees="0" offsetX="10.6215" name="Pupila_D_1.png" scaleY="1.5" scaleX="1.5"/>
+  <sprite rect="0,0,49,46" offsetY="109.125" angleDegrees="0" offsetX="103.2045" name="Pupila_E_1.png" scaleY="1.5" scaleX="1.5"/>
+ </spritesheet>
+ <spritesheet width="2048" height="2048" filename="spriteSheets/sheet_Teste_1.2-FullHD-Teste_1.png" resolution="FullHD-Teste_1" name="sheet_Teste_1.2">
+  <sprite rect="1772,96,218,1372" offsetY="-1024.4272" angleDegrees="0" offsetX="-91.748253" name="Mao_1.png" scaleY="1" scaleX="1"/>
+  <sprite rect="1306,96,466,720" offsetY="-98.741249" angleDegrees="0" offsetX="-82.005753" name="Corpo_1.png" scaleY="1" scaleX="1"/>
+  <sprite rect="1149,96,157,180" offsetY="295.50375" angleDegrees="0" offsetX="-118.6605" name="Orelha_D_2.png" scaleY="1" scaleX="1"/>
+  <sprite rect="980,96,169,178" offsetY="245.9745" angleDegrees="0" offsetX="185.45399" name="Orelha_E_2.png" scaleY="1" scaleX="1"/>
+  <sprite rect="755,96,225,173" offsetY="-220.4955" angleDegrees="0" offsetX="173.79675" name="Braco_E_1.png" scaleY="1" scaleX="1"/>
+  <sprite rect="614,96,141,154" offsetY="173.62575" angleDegrees="0" offsetX="15.36975" name="Olho_D_1.png" scaleY="1" scaleX="1"/>
+  <sprite rect="428,96,186,153" offsetY="-81.0765" angleDegrees="0" offsetX="-312.06375" name="Braco_D_1.png" scaleY="1" scaleX="1"/>
+  <sprite rect="310,96,118,149" offsetY="165.3075" angleDegrees="0" offsetX="145.93726" name="Olho_E_1.png" scaleY="1" scaleX="1"/>
+  <sprite rect="67,96,243,97" offsetY="21.219749" angleDegrees="0" offsetX="55.964249" name="Dente_1.png" scaleY="1" scaleX="1"/>
+  <sprite rect="0,96,67,63" offsetY="172.1835" angleDegrees="0" offsetX="15.93225" name="Pupila_D_1.png" scaleY="1" scaleX="1"/>
+  <sprite rect="1744,0,246,96" offsetY="87.335999" angleDegrees="0" offsetX="170.77049" name="Nariz_1.png" scaleY="1" scaleX="1"/>
+  <sprite rect="1421,0,323,92" offsetY="52.373249" angleDegrees="0" offsetX="16.559999" name="Boca_1.png" scaleY="1" scaleX="1"/>
+  <sprite rect="1354,0,67,63" offsetY="163.6875" angleDegrees="0" offsetX="154.80675" name="Pupila_E_1.png" scaleY="1" scaleX="1"/>
+ </spritesheet>
+ <spritesheet width="2048" height="2048" filename="spriteSheets/sheet_Teste_1.2-QuadHD-Teste_1.png" resolution="QuadHD-Teste_1" name="sheet_Teste_1.2">
+  <sprite rect="1680,200,286,1826" offsetY="-1365.903" angleDegrees="0" offsetX="-122.331" name="Mao_1.png" scaleY="0.75" scaleX="0.75"/>
+  <sprite rect="1062,200,618,956" offsetY="-131.655" angleDegrees="0" offsetX="-109.341" name="Corpo_1.png" scaleY="0.75" scaleX="0.75"/>
+  <sprite rect="857,200,205,236" offsetY="394.005" angleDegrees="0" offsetX="-158.214" name="Orelha_D_2.png" scaleY="0.75" scaleX="0.75"/>
+  <sprite rect="635,200,222,234" offsetY="327.966" angleDegrees="0" offsetX="247.272" name="Orelha_E_2.png" scaleY="0.75" scaleX="0.75"/>
+  <sprite rect="338,200,297,226" offsetY="-293.99399" angleDegrees="0" offsetX="231.729" name="Braco_E_1.png" scaleY="0.75" scaleX="0.75"/>
+  <sprite rect="154,200,184,202" offsetY="231.50101" angleDegrees="0" offsetX="20.493" name="Olho_D_1.png" scaleY="0.75" scaleX="0.75"/>
+  <sprite rect="0,200,154,195" offsetY="220.41" angleDegrees="0" offsetX="194.58299" name="Olho_E_1.png" scaleY="0.75" scaleX="0.75"/>
+  <sprite rect="1721,0,245,200" offsetY="-108.102" angleDegrees="0" offsetX="-416.08499" name="Braco_D_1.png" scaleY="0.75" scaleX="0.75"/>
+  <sprite rect="1400,0,321,125" offsetY="28.292999" angleDegrees="0" offsetX="74.619003" name="Dente_1.png" scaleY="0.75" scaleX="0.75"/>
+  <sprite rect="1076,0,324,124" offsetY="116.448" angleDegrees="0" offsetX="227.694" name="Nariz_1.png" scaleY="0.75" scaleX="0.75"/>
+  <sprite rect="650,0,426,118" offsetY="69.831001" angleDegrees="0" offsetX="22.08" name="Boca_1.png" scaleY="0.75" scaleX="0.75"/>
+  <sprite rect="564,0,86,81" offsetY="229.578" angleDegrees="0" offsetX="21.243" name="Pupila_D_1.png" scaleY="0.75" scaleX="0.75"/>
+  <sprite rect="478,0,86,81" offsetY="218.25" angleDegrees="0" offsetX="206.409" name="Pupila_E_1.png" scaleY="0.75" scaleX="0.75"/>
+ </spritesheet>
+</spritesheets>
