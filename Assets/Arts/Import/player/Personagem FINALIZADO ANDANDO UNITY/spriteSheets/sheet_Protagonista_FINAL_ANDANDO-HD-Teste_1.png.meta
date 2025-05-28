@@ -1,0 +1,468 @@
+fileFormatVersion: 2
+guid: d30fc221b45adb046bce983fe244fe5d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3643741663295555586
+    second: sheet_Protagonista_FINAL_ANDANDO-HD-Teste_1_0
+  - first:
+      213: 7996546105863940836
+    second: sheet_Protagonista_FINAL_ANDANDO-HD-Teste_1_1
+  - first:
+      213: 4776422943183177593
+    second: sheet_Protagonista_FINAL_ANDANDO-HD-Teste_1_2
+  - first:
+      213: 7994138053671514237
+    second: sheet_Protagonista_FINAL_ANDANDO-HD-Teste_1_3
+  - first:
+      213: -3214858200419457670
+    second: sheet_Protagonista_FINAL_ANDANDO-HD-Teste_1_4
+  - first:
+      213: 8373105902766501339
+    second: sheet_Protagonista_FINAL_ANDANDO-HD-Teste_1_5
+  - first:
+      213: -8343505913629297540
+    second: sheet_Protagonista_FINAL_ANDANDO-HD-Teste_1_6
+  - first:
+      213: -1678863992935585623
+    second: sheet_Protagonista_FINAL_ANDANDO-HD-Teste_1_7
+  - first:
+      213: 3966960905274943466
+    second: sheet_Protagonista_FINAL_ANDANDO-HD-Teste_1_8
+  - first:
+      213: 465163713377184825
+    second: sheet_Protagonista_FINAL_ANDANDO-HD-Teste_1_9
+  - first:
+      213: -6920251393421197182
+    second: sheet_Protagonista_FINAL_ANDANDO-HD-Teste_1_10
+  - first:
+      213: 4925797541768468636
+    second: sheet_Protagonista_FINAL_ANDANDO-HD-Teste_1_11
+  - first:
+      213: -8681212721819045783
+    second: sheet_Protagonista_FINAL_ANDANDO-HD-Teste_1_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sheet_Protagonista_FINAL_ANDANDO-HD-Teste_1_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 982
+        width: 41
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 208c506ccbb219230800000000000000
+      internalID: 3643741663295555586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Protagonista_FINAL_ANDANDO-HD-Teste_1_1
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 982
+        width: 41
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4eaad06d05079fe60800000000000000
+      internalID: 7996546105863940836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Protagonista_FINAL_ANDANDO-HD-Teste_1_2
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 963
+        width: 209
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97785793c53494240800000000000000
+      internalID: 4776422943183177593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Protagonista_FINAL_ANDANDO-HD-Teste_1_3
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 960
+        width: 156
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d70f58e7432e0fe60800000000000000
+      internalID: 7994138053671514237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Protagonista_FINAL_ANDANDO-HD-Teste_1_4
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 960
+        width: 159
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a752fb0ff778263d0800000000000000
+      internalID: -3214858200419457670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Protagonista_FINAL_ANDANDO-HD-Teste_1_5
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 926
+        width: 73
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bddaf19b47f333470800000000000000
+      internalID: 8373105902766501339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Protagonista_FINAL_ANDANDO-HD-Teste_1_6
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 922
+        width: 120
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7431ccc399e53c80800000000000000
+      internalID: -8343505913629297540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Protagonista_FINAL_ANDANDO-HD-Teste_1_7
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 922
+        width: 88
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a861eae71a73b8e0800000000000000
+      internalID: -1678863992935585623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Protagonista_FINAL_ANDANDO-HD-Teste_1_8
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 909
+        width: 146
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae766ccece97d0730800000000000000
+      internalID: 3966960905274943466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Protagonista_FINAL_ANDANDO-HD-Teste_1_9
+      rect:
+        serializedVersion: 2
+        x: 1122
+        y: 909
+        width: 99
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93caf3acee7947600800000000000000
+      internalID: 465163713377184825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Protagonista_FINAL_ANDANDO-HD-Teste_1_10
+      rect:
+        serializedVersion: 2
+        x: 1235
+        y: 904
+        width: 97
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2804ab2d50456ff90800000000000000
+      internalID: -6920251393421197182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Protagonista_FINAL_ANDANDO-HD-Teste_1_11
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 546
+        width: 295
+        height: 474
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c981a9824c2fb5440800000000000000
+      internalID: 4925797541768468636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Protagonista_FINAL_ANDANDO-HD-Teste_1_12
+      rect:
+        serializedVersion: 2
+        x: 1658
+        y: 109
+        width: 141
+        height: 904
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 960bf584603268780800000000000000
+      internalID: -8681212721819045783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      sheet_Protagonista_FINAL_ANDANDO-HD-Teste_1_0: 3643741663295555586
+      sheet_Protagonista_FINAL_ANDANDO-HD-Teste_1_1: 7996546105863940836
+      sheet_Protagonista_FINAL_ANDANDO-HD-Teste_1_10: -6920251393421197182
+      sheet_Protagonista_FINAL_ANDANDO-HD-Teste_1_11: 4925797541768468636
+      sheet_Protagonista_FINAL_ANDANDO-HD-Teste_1_12: -8681212721819045783
+      sheet_Protagonista_FINAL_ANDANDO-HD-Teste_1_2: 4776422943183177593
+      sheet_Protagonista_FINAL_ANDANDO-HD-Teste_1_3: 7994138053671514237
+      sheet_Protagonista_FINAL_ANDANDO-HD-Teste_1_4: -3214858200419457670
+      sheet_Protagonista_FINAL_ANDANDO-HD-Teste_1_5: 8373105902766501339
+      sheet_Protagonista_FINAL_ANDANDO-HD-Teste_1_6: -8343505913629297540
+      sheet_Protagonista_FINAL_ANDANDO-HD-Teste_1_7: -1678863992935585623
+      sheet_Protagonista_FINAL_ANDANDO-HD-Teste_1_8: 3966960905274943466
+      sheet_Protagonista_FINAL_ANDANDO-HD-Teste_1_9: 465163713377184825
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

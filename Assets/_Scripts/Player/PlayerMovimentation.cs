@@ -7,6 +7,10 @@ public class PlayerMovimentation : MonoBehaviour
     [SerializeField] PlayerInput playerInputs;
     [SerializeField] Rigidbody2D rb2d;
     [SerializeField] PlayerStats playerStats;
+    [SerializeField] Animator animator; 
+
+
+
 
     [Header("Movement Settings")]
     [SerializeField] float speed = 5f;
@@ -33,6 +37,9 @@ public class PlayerMovimentation : MonoBehaviour
 
             // Apply movement
             rb2d.linearVelocity = new Vector2(moveX * speed, rb2d.linearVelocity.y);
+            // animation
+
+            animator.SetBool("isWalk", moveX != 0);
 
             // Update facing direction if needed
             if (moveX > 0 && facingDirection != 1)

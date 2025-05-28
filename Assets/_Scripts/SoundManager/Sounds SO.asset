@@ -36,4 +36,4 @@ MonoBehaviour:
     volume: 1
     mixer: {fileID: 0}
     sounds:
-    - {fileID: 8300000, guid: 892793a4596d28441ae383a309a663c2, type: 3}
+    - {fileID: 8300000, guid: 3d591fd37824088498905c05ea8041cd, type: 3}

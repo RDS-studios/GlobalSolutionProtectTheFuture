@@ -1,0 +1,43 @@
+<drawingAnimations version="1">
+ <drawingAnimation name="Default" spritesheet="sheet_Protagonista_FINAL_IDLE">
+  <drawing name="Mao-P-G_Mao" node="Mao-P-G_Mao" drwId="1">
+   <drw skinId="0" name="Mao_1.png" frame="1" repeat="41"/>
+  </drawing>
+  <drawing name="Mao-P-G_Braco_E" node="Mao-P-G_Braco_E" drwId="2">
+   <drw skinId="0" name="Braco_E_1.png" frame="1" repeat="41"/>
+  </drawing>
+  <drawing name="Mao-P-G_Corpo" node="Mao-P-G_Corpo" drwId="3">
+   <drw skinId="0" name="Corpo_1.png" frame="1" repeat="41"/>
+  </drawing>
+  <drawing name="Mao-P-G_Dente" node="Mao-P-G_Dente" drwId="4">
+   <drw skinId="0" name="Dente_1.png" frame="1" repeat="41"/>
+  </drawing>
+  <drawing name="Mao-P-G_Boca" node="Mao-P-G_Boca" drwId="5">
+   <drw skinId="0" name="Boca_1.png" frame="1" repeat="41"/>
+  </drawing>
+  <drawing name="Mao-P-G_Braco_D" node="Mao-P-G_Braco_D" drwId="6">
+   <drw skinId="0" name="Braco_D_1.png" frame="1" repeat="41"/>
+  </drawing>
+  <drawing name="Mao-P-G_Orelha_E" node="Mao-P-G_Orelha_E" drwId="7">
+   <drw skinId="0" name="Orelha_E_2.png" frame="1" repeat="41"/>
+  </drawing>
+  <drawing name="Mao-P-G_Olho_E" node="Mao-P-G_Olho_E" drwId="8">
+   <drw skinId="0" name="Olho_E_1.png" frame="1" repeat="41"/>
+  </drawing>
+  <drawing name="Mao-P-G_Orelha_D" node="Mao-P-G_Orelha_D" drwId="9">
+   <drw skinId="0" name="Orelha_D_2.png" frame="1" repeat="41"/>
+  </drawing>
+  <drawing name="Mao-P-G_Pupila_E" node="Mao-P-G_Pupila_E" drwId="10">
+   <drw skinId="0" name="Pupila_E_1.png" frame="1" repeat="41"/>
+  </drawing>
+  <drawing name="Mao-P-G_Nariz" node="Mao-P-G_Nariz" drwId="11">
+   <drw skinId="0" name="Nariz_1.png" frame="1" repeat="41"/>
+  </drawing>
+  <drawing name="Mao-P-G_Olho_D" node="Mao-P-G_Olho_D" drwId="12">
+   <drw skinId="0" name="Olho_D_1.png" frame="1" repeat="41"/>
+  </drawing>
+  <drawing name="Mao-P-G_Pupila_D" node="Mao-P-G_Pupila_D" drwId="13">
+   <drw skinId="0" name="Pupila_D_1.png" frame="1" repeat="41"/>
+  </drawing>
+ </drawingAnimation>
+</drawingAnimations>

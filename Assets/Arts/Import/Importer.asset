@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 819987e1edc943b4fa1b1fbb06080c5b, type: 3}
   m_Name: Importer
   m_EditorClassIdentifier: 
-  HarmonyXMLProjectPath: Assets/Arts/Import/Inimigo Slime
-  OutputPath: Assets/Arts/Enemies/inimigoSlime.asset
+  HarmonyXMLProjectPath: Assets/Arts/Import/player/Inimigo FINALIZADO UNITY IDLE
+  OutputPath: Assets/Arts/player/playerIdle/ImporterProject.asset
   GeneratePrefab: 1
   ExistingPrefab: {fileID: 0}
   AnimationSettings:
