@@ -7,6 +7,8 @@ TagManager:
   - Ground
   - Enemie
   - WaterJet
+  - Checkpoint
+  - GameSaver
   layers:
   - Default
   - TransparentFX
@@ -18,7 +20,7 @@ TagManager:
   - waterJet
   - deadenemie
   - Ground
-  - 
+  - Checkpoint
   - 
   - 
   - 
