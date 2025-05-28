@@ -16,11 +16,17 @@ namespace SmallHedge.SoundManager
 
         private void Awake()
         {
+            DontDestroyOnLoad(gameObject);
             if(!instance)
             {
                 instance = this;
                 audioSource = GetComponent<AudioSource>();
             }
+        }
+
+        private void Update()
+        {
+            transform.position = Camera.main.transform.position;    
         }
 
         public static void PlaySound(SoundType sound, AudioSource source = null, float volume = 1)

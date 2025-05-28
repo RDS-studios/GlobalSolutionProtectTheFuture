@@ -1,5 +1,6 @@
 using SmallHedge.SoundManager;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MenuFunction : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class MenuFunction : MonoBehaviour
     public void PlayGame()
     {
         SoundManager.PlaySound(SoundType.BtnMenu);
-        //
+        SceneManager.LoadScene(1); // Replace "GameScene" with the actual name of your game scene
     }
 
 

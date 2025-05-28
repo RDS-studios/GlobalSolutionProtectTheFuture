@@ -9,6 +9,7 @@ TagManager:
   - WaterJet
   - Checkpoint
   - GameSaver
+  - Coin
   layers:
   - Default
   - TransparentFX
