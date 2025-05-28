@@ -1,0 +1,120 @@
+<skeletons version="1" tgspath="Protagonista_FINAL_IDLE.xstage">
+ <skeleton name="Master-P_1">
+  <nodes>
+   <peg id="0" name="Master-P_1"/>
+   <peg id="1" name="Corpo-G_Mao-P"/>
+   <peg id="2" name="Corpo-G_Corpo-P"/>
+   <peg id="3" name="Corpo-G_Olho_D-P"/>
+   <peg id="4" name="Corpo-G_Pupila_D-P"/>
+   <read id="5" name="Corpo-G_Pupila_D" visible="true"/>
+   <read id="6" name="Corpo-G_Olho_D" visible="true"/>
+   <peg id="7" name="Corpo-G_Nariz-P"/>
+   <read id="8" name="Corpo-G_Nariz" visible="true"/>
+   <peg id="9" name="Corpo-G_Olho_E-P"/>
+   <peg id="10" name="Corpo-G_Pupila_E-P"/>
+   <read id="11" name="Corpo-G_Pupila_E" visible="true"/>
+   <peg id="12" name="Corpo-G_Orelha_D-P"/>
+   <read id="13" name="Corpo-G_Orelha_D" visible="true"/>
+   <peg id="14" name="Corpo-G_Olho_E-P"/>
+   <read id="15" name="Corpo-G_Olho_E" visible="true"/>
+   <peg id="16" name="Corpo-G_Orelha_E-P"/>
+   <read id="17" name="Corpo-G_Orelha_E" visible="true"/>
+   <peg id="18" name="Corpo-G_Braco_D-P"/>
+   <read id="19" name="Corpo-G_Braco_D" visible="true"/>
+   <peg id="20" name="Corpo-G_Boca-P"/>
+   <read id="21" name="Corpo-G_Boca" visible="true"/>
+   <peg id="22" name="Corpo-G_Dente-P"/>
+   <read id="23" name="Corpo-G_Dente" visible="true"/>
+   <read id="24" name="Corpo-G_Corpo" visible="true"/>
+   <peg id="25" name="Corpo-G_Braco_E-P"/>
+   <read id="26" name="Corpo-G_Braco_E" visible="true"/>
+   <read id="27" name="Corpo-G_Mao" visible="true"/>
+   <peg id="28" name="Master-P"/>
+   <peg id="29" name="Mao-P-G_Mao-P"/>
+   <peg id="30" name="Mao-P-G_Corpo-P"/>
+   <peg id="31" name="Mao-P-G_Olho_D-P"/>
+   <peg id="32" name="Mao-P-G_Pupila_D-P"/>
+   <read id="33" name="Mao-P-G_Pupila_D" visible="true"/>
+   <read id="34" name="Mao-P-G_Olho_D" visible="true"/>
+   <peg id="35" name="Mao-P-G_Nariz-P"/>
+   <read id="36" name="Mao-P-G_Nariz" visible="true"/>
+   <peg id="37" name="Mao-P-G_Olho_E-P"/>
+   <peg id="38" name="Mao-P-G_Pupila_E-P"/>
+   <read id="39" name="Mao-P-G_Pupila_E" visible="true"/>
+   <peg id="40" name="Mao-P-G_Orelha_D-P"/>
+   <read id="41" name="Mao-P-G_Orelha_D" visible="true"/>
+   <peg id="42" name="Mao-P-G_Olho_E-P"/>
+   <read id="43" name="Mao-P-G_Olho_E" visible="true"/>
+   <peg id="44" name="Mao-P-G_Orelha_E-P"/>
+   <read id="45" name="Mao-P-G_Orelha_E" visible="true"/>
+   <peg id="46" name="Mao-P-G_Braco_D-P"/>
+   <read id="47" name="Mao-P-G_Braco_D" visible="true"/>
+   <peg id="48" name="Mao-P-G_Boca-P"/>
+   <read id="49" name="Mao-P-G_Boca" visible="true"/>
+   <peg id="50" name="Mao-P-G_Dente-P"/>
+   <read id="51" name="Mao-P-G_Dente" visible="true"/>
+   <read id="52" name="Mao-P-G_Corpo" visible="true"/>
+   <peg id="53" name="Mao-P-G_Braco_E-P"/>
+   <read id="54" name="Mao-P-G_Braco_E" visible="true"/>
+   <read id="55" name="Mao-P-G_Mao" visible="true"/>
+  </nodes>
+  <links>
+   <link in="Top" out="0" port="0"/>
+   <link in="0" out="1" port="0"/>
+   <link in="1" out="2" port="0"/>
+   <link in="2" out="3" port="0"/>
+   <link in="3" out="4" port="0"/>
+   <link in="4" out="5" port="0"/>
+   <link in="3" out="6" port="0"/>
+   <link in="2" out="7" port="0"/>
+   <link in="7" out="8" port="0"/>
+   <link in="2" out="9" port="0"/>
+   <link in="9" out="10" port="0"/>
+   <link in="10" out="11" port="0"/>
+   <link in="2" out="12" port="0"/>
+   <link in="12" out="13" port="0"/>
+   <link in="2" out="14" port="0"/>
+   <link in="14" out="15" port="0"/>
+   <link in="2" out="16" port="0"/>
+   <link in="16" out="17" port="0"/>
+   <link in="2" out="18" port="0"/>
+   <link in="18" out="19" port="0"/>
+   <link in="2" out="20" port="0"/>
+   <link in="20" out="21" port="0"/>
+   <link in="20" out="22" port="0"/>
+   <link in="22" out="23" port="0"/>
+   <link in="2" out="24" port="0"/>
+   <link in="2" out="25" port="0"/>
+   <link in="25" out="26" port="0"/>
+   <link in="1" out="27" port="0"/>
+   <link in="0" out="28" port="0"/>
+   <link in="28" out="29" port="0"/>
+   <link in="29" out="30" port="0"/>
+   <link in="30" out="31" port="0"/>
+   <link in="31" out="32" port="0"/>
+   <link in="32" out="33" port="0"/>
+   <link in="31" out="34" port="0"/>
+   <link in="30" out="35" port="0"/>
+   <link in="35" out="36" port="0"/>
+   <link in="30" out="37" port="0"/>
+   <link in="37" out="38" port="0"/>
+   <link in="38" out="39" port="0"/>
+   <link in="30" out="40" port="0"/>
+   <link in="40" out="41" port="0"/>
+   <link in="30" out="42" port="0"/>
+   <link in="42" out="43" port="0"/>
+   <link in="30" out="44" port="0"/>
+   <link in="44" out="45" port="0"/>
+   <link in="30" out="46" port="0"/>
+   <link in="46" out="47" port="0"/>
+   <link in="30" out="48" port="0"/>
+   <link in="48" out="49" port="0"/>
+   <link in="48" out="50" port="0"/>
+   <link in="50" out="51" port="0"/>
+   <link in="30" out="52" port="0"/>
+   <link in="30" out="53" port="0"/>
+   <link in="53" out="54" port="0"/>
+   <link in="29" out="55" port="0"/>
+  </links>
+ </skeleton>
+</skeletons>

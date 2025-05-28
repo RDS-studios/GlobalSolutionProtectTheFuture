@@ -19,4 +19,10 @@ public class ProjectileScript : MonoBehaviour
             transform.rotation = Quaternion.Euler(0, 0, angle);
         }
     }
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Destroy(gameObject); // Destroi o projétil ao colidir com qualquer coisa
+    }
 }

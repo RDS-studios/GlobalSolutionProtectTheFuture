@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5028596026484155414}
   - component: {fileID: 7243144063005709084}
   - component: {fileID: 5143051194687451865}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: waterJet
   m_TagString: WaterJet
   m_Icon: {fileID: 0}
@@ -138,7 +138,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3585559491084070687}
   - component: {fileID: 7804982802752582663}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Triangle
   m_TagString: Untagged
   m_Icon: {fileID: 0}

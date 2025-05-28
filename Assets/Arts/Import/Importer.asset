@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 819987e1edc943b4fa1b1fbb06080c5b, type: 3}
   m_Name: Importer
   m_EditorClassIdentifier: 
-  HarmonyXMLProjectPath: Assets/Arts/Import/player/Inimigo FINALIZADO UNITY IDLE
-  OutputPath: Assets/Arts/player/playerIdle/ImporterProject.asset
+  HarmonyXMLProjectPath: Assets/Arts/Import/reimportPlayer
+  OutputPath: Assets/Arts/player/playerCompleto/player.asset
   GeneratePrefab: 1
-  ExistingPrefab: {fileID: 0}
+  ExistingPrefab: {fileID: 294591164215183071, guid: 8c18b69c2334c4843b7fa536c9362d4d, type: 3}
   AnimationSettings:
     FrameRate: 30
     Stepped: 1

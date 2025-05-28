@@ -62,6 +62,7 @@ public class PlayerMovimentation : MonoBehaviour
         {
             rb2d.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             canJump = false;
+            animator.SetBool("isJump", true); // Set jump animation when jumping
         }
     }
 
@@ -70,6 +71,7 @@ public class PlayerMovimentation : MonoBehaviour
         if (collision.collider.CompareTag("Ground"))
         {
             canJump = true;
+            animator.SetBool("isJump", false); // Reset jump animation when touching the ground 
         }
     }
 }
