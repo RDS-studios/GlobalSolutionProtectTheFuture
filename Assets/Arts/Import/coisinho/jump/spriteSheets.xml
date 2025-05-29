@@ -1,0 +1,123 @@
+<!DOCTYPE spritesheets>
+<spritesheets>
+ <spritesheet resolution="ipad" width="2048" height="1024" name="sheet_Top" filename="spriteSheets/sheet_Top-ipad.png">
+  <sprite scaleY="1.875" angleDegrees="0" rect="1679,0,121,737" offsetX="-48.9324" offsetY="-546.361" name="16-Mao-1.png" scaleX="1.875"/>
+  <sprite scaleY="1.875" angleDegrees="0" rect="1425,0,254,389" offsetX="-43.7364" offsetY="-52.662" name="20-Corpo-1.png" scaleX="1.875"/>
+  <sprite scaleY="1.875" angleDegrees="0" rect="1281,0,144,228" offsetX="-129.977" offsetY="-82.24" name="33-extintor-1.png" scaleX="1.875"/>
+  <sprite scaleY="1.875" angleDegrees="0" rect="1185,0,96,101" offsetX="98.9088" offsetY="131.186" name="10-Orelha_E-2.png" scaleX="1.875"/>
+  <sprite scaleY="1.875" angleDegrees="0" rect="1096,0,89,101" offsetX="-63.2856" offsetY="157.602" name="19-Orelha_D-2.png" scaleX="1.875"/>
+  <sprite scaleY="1.875" angleDegrees="0" rect="970,0,126,97" offsetX="92.6916" offsetY="-117.598" name="30-Braco_E-1.png" scaleX="1.875"/>
+  <sprite scaleY="1.875" angleDegrees="0" rect="889,0,81,88" offsetX="8.1972" offsetY="92.6004" name="14-Olho_D-1.png" scaleX="1.875"/>
+  <sprite scaleY="1.875" angleDegrees="0" rect="784,0,105,87" offsetX="-166.434" offsetY="-43.2408" name="17-Braco_D-1.png" scaleX="1.875"/>
+  <sprite scaleY="1.875" angleDegrees="0" rect="716,0,68,85" offsetX="77.8332" offsetY="88.164" name="11-Olho_E-1.png" scaleX="1.875"/>
+  <sprite scaleY="1.875" angleDegrees="0" rect="489,0,227,79" offsetX="113.542" offsetY="-177.604" name="35-mangueira-1.png" scaleX="1.875"/>
+  <sprite scaleY="1.875" angleDegrees="0" rect="353,0,136,57" offsetX="91.0776" offsetY="46.5792" name="18-Nariz-1.png" scaleX="1.875"/>
+  <sprite scaleY="1.875" angleDegrees="0" rect="218,0,135,57" offsetX="29.8476" offsetY="11.3172" name="26-Dente-1.png" scaleX="1.875"/>
+  <sprite scaleY="1.875" angleDegrees="0" rect="41,0,177,54" offsetX="8.832" offsetY="27.9324" name="12-Boca-1.png" scaleX="1.875"/>
+  <sprite scaleY="1.875" angleDegrees="0" rect="0,0,41,39" offsetX="82.5636" offsetY="87.3" name="13-Pupila_E-1.png" scaleX="1.875"/>
+  <sprite scaleY="1.875" angleDegrees="0" rect="1679,0,121,737" offsetX="-48.9324" offsetY="-546.361" name="24-Mao-1.png" scaleX="1.875"/>
+  <sprite scaleY="1.875" angleDegrees="0" rect="1185,0,96,101" offsetX="98.9088" offsetY="131.186" name="32-Orelha_E-2.png" scaleX="1.875"/>
+  <sprite scaleY="1.875" angleDegrees="0" rect="970,0,126,97" offsetX="92.6916" offsetY="-117.598" name="9-Braco_E-1.png" scaleX="1.875"/>
+  <sprite scaleY="1.875" angleDegrees="0" rect="784,0,105,87" offsetX="-166.434" offsetY="-43.2408" name="21-Braco_D-1.png" scaleX="1.875"/>
+  <sprite scaleY="1.875" angleDegrees="0" rect="353,0,136,57" offsetX="91.0776" offsetY="46.5792" name="22-Nariz-1.png" scaleX="1.875"/>
+  <sprite scaleY="1.875" angleDegrees="0" rect="41,0,177,54" offsetX="8.832" offsetY="27.9324" name="28-Boca-1.png" scaleX="1.875"/>
+  <sprite scaleY="1.875" angleDegrees="0" rect="0,0,41,39" offsetX="8.4972" offsetY="91.8312" name="23-Pupila_D-1.png" scaleX="1.875"/>
+  <sprite scaleY="1.875" angleDegrees="0" rect="1425,0,254,389" offsetX="-43.7364" offsetY="-52.662" name="7-Corpo-1.png" scaleX="1.875"/>
+  <sprite scaleY="1.875" angleDegrees="0" rect="889,0,81,88" offsetX="8.1972" offsetY="92.6004" name="31-Olho_D-1.png" scaleX="1.875"/>
+  <sprite scaleY="1.875" angleDegrees="0" rect="218,0,135,57" offsetX="29.8476" offsetY="11.3172" name="8-Dente-1.png" scaleX="1.875"/>
+  <sprite scaleY="1.875" angleDegrees="0" rect="0,0,41,39" offsetX="82.5636" offsetY="87.3" name="29-Pupila_E-1.png" scaleX="1.875"/>
+  <sprite scaleY="1.875" angleDegrees="0" rect="1096,0,89,101" offsetX="-63.2856" offsetY="157.602" name="25-Orelha_D-2.png" scaleX="1.875"/>
+  <sprite scaleY="1.875" angleDegrees="0" rect="0,0,41,39" offsetX="8.4972" offsetY="91.8312" name="15-Pupila_D-1.png" scaleX="1.875"/>
+  <sprite scaleY="1.875" angleDegrees="0" rect="716,0,68,85" offsetX="77.8332" offsetY="88.164" name="27-Olho_E-1.png" scaleX="1.875"/>
+ </spritesheet>
+ <spritesheet resolution="ipad-retina" width="2048" height="2048" name="sheet_Top" filename="spriteSheets/sheet_Top-ipad-retina.png">
+  <sprite scaleY="0.9375" angleDegrees="0" rect="1777,158,231,1463" offsetX="-97.8648" offsetY="-1092.72" name="16-Mao-1.png" scaleX="0.9375"/>
+  <sprite scaleY="0.9375" angleDegrees="0" rect="1281,158,496,767" offsetX="-87.4728" offsetY="-105.324" name="20-Corpo-1.png" scaleX="0.9375"/>
+  <sprite scaleY="0.9375" angleDegrees="0" rect="1005,158,276,445" offsetX="-259.953" offsetY="-164.48" name="33-extintor-1.png" scaleX="0.9375"/>
+  <sprite scaleY="0.9375" angleDegrees="0" rect="839,158,166,191" offsetX="-126.571" offsetY="315.204" name="19-Orelha_D-2.png" scaleX="0.9375"/>
+  <sprite scaleY="0.9375" angleDegrees="0" rect="659,158,180,190" offsetX="197.818" offsetY="262.373" name="10-Orelha_E-2.png" scaleX="0.9375"/>
+  <sprite scaleY="0.9375" angleDegrees="0" rect="419,158,240,183" offsetX="185.383" offsetY="-235.195" name="30-Braco_E-1.png" scaleX="0.9375"/>
+  <sprite scaleY="0.9375" angleDegrees="0" rect="269,158,150,164" offsetX="16.3944" offsetY="185.201" name="14-Olho_D-1.png" scaleX="0.9375"/>
+  <sprite scaleY="0.9375" angleDegrees="0" rect="71,158,198,162" offsetX="-332.868" offsetY="-86.4816" name="17-Braco_D-1.png" scaleX="0.9375"/>
+  <sprite scaleY="0.9375" angleDegrees="0" rect="0,158,71,67" offsetX="165.127" offsetY="174.6" name="13-Pupila_E-1.png" scaleX="0.9375"/>
+  <sprite scaleY="0.9375" angleDegrees="0" rect="1883,0,125,158" offsetX="155.666" offsetY="176.328" name="11-Olho_E-1.png" scaleX="0.9375"/>
+  <sprite scaleY="0.9375" angleDegrees="0" rect="1441,0,442,147" offsetX="227.084" offsetY="-355.207" name="35-mangueira-1.png" scaleX="0.9375"/>
+  <sprite scaleY="0.9375" angleDegrees="0" rect="1182,0,259,103" offsetX="59.6952" offsetY="22.6344" name="26-Dente-1.png" scaleX="0.9375"/>
+  <sprite scaleY="0.9375" angleDegrees="0" rect="921,0,261,102" offsetX="182.155" offsetY="93.1584" name="18-Nariz-1.png" scaleX="0.9375"/>
+  <sprite scaleY="0.9375" angleDegrees="0" rect="578,0,343,97" offsetX="17.664" offsetY="55.8648" name="12-Boca-1.png" scaleX="0.9375"/>
+  <sprite scaleY="0.9375" angleDegrees="0" rect="507,0,71,67" offsetX="16.9944" offsetY="183.662" name="15-Pupila_D-1.png" scaleX="0.9375"/>
+  <sprite scaleY="0.9375" angleDegrees="0" rect="1777,158,231,1463" offsetX="-97.8648" offsetY="-1092.72" name="24-Mao-1.png" scaleX="0.9375"/>
+  <sprite scaleY="0.9375" angleDegrees="0" rect="839,158,166,191" offsetX="-126.571" offsetY="315.204" name="25-Orelha_D-2.png" scaleX="0.9375"/>
+  <sprite scaleY="0.9375" angleDegrees="0" rect="419,158,240,183" offsetX="185.383" offsetY="-235.195" name="9-Braco_E-1.png" scaleX="0.9375"/>
+  <sprite scaleY="0.9375" angleDegrees="0" rect="71,158,198,162" offsetX="-332.868" offsetY="-86.4816" name="21-Braco_D-1.png" scaleX="0.9375"/>
+  <sprite scaleY="0.9375" angleDegrees="0" rect="1182,0,259,103" offsetX="59.6952" offsetY="22.6344" name="8-Dente-1.png" scaleX="0.9375"/>
+  <sprite scaleY="0.9375" angleDegrees="0" rect="578,0,343,97" offsetX="17.664" offsetY="55.8648" name="28-Boca-1.png" scaleX="0.9375"/>
+  <sprite scaleY="0.9375" angleDegrees="0" rect="0,158,71,67" offsetX="165.127" offsetY="174.6" name="29-Pupila_E-1.png" scaleX="0.9375"/>
+  <sprite scaleY="0.9375" angleDegrees="0" rect="1281,158,496,767" offsetX="-87.4728" offsetY="-105.324" name="7-Corpo-1.png" scaleX="0.9375"/>
+  <sprite scaleY="0.9375" angleDegrees="0" rect="269,158,150,164" offsetX="16.3944" offsetY="185.201" name="31-Olho_D-1.png" scaleX="0.9375"/>
+  <sprite scaleY="0.9375" angleDegrees="0" rect="921,0,261,102" offsetX="182.155" offsetY="93.1584" name="22-Nariz-1.png" scaleX="0.9375"/>
+  <sprite scaleY="0.9375" angleDegrees="0" rect="659,158,180,190" offsetX="197.818" offsetY="262.373" name="32-Orelha_E-2.png" scaleX="0.9375"/>
+  <sprite scaleY="0.9375" angleDegrees="0" rect="507,0,71,67" offsetX="16.9944" offsetY="183.662" name="23-Pupila_D-1.png" scaleX="0.9375"/>
+  <sprite scaleY="0.9375" angleDegrees="0" rect="1883,0,125,158" offsetX="155.666" offsetY="176.328" name="27-Olho_E-1.png" scaleX="0.9375"/>
+ </spritesheet>
+ <spritesheet resolution="iphone" width="1024" height="512" name="sheet_Top" filename="spriteSheets/sheet_Top-iphone.png">
+  <sprite scaleY="4" angleDegrees="0" rect="865,0,63,352" offsetX="-22.9371" offsetY="-256.107" name="16-Mao-1.png" scaleX="4"/>
+  <sprite scaleY="4" angleDegrees="0" rect="740,0,125,189" offsetX="-20.5014" offsetY="-24.6853" name="20-Corpo-1.png" scaleX="4"/>
+  <sprite scaleY="4" angleDegrees="0" rect="666,0,74,113" offsetX="-60.9265" offsetY="-38.55" name="33-extintor-1.png" scaleX="4"/>
+  <sprite scaleY="4" angleDegrees="0" rect="618,0,48,54" offsetX="-29.6651" offsetY="73.8759" name="19-Orelha_D-2.png" scaleX="4"/>
+  <sprite scaleY="4" angleDegrees="0" rect="567,0,51,53" offsetX="46.3635" offsetY="61.4936" name="10-Orelha_E-2.png" scaleX="4"/>
+  <sprite scaleY="4" angleDegrees="0" rect="502,0,65,52" offsetX="43.4492" offsetY="-55.1239" name="30-Braco_E-1.png" scaleX="4"/>
+  <sprite scaleY="4" angleDegrees="0" rect="447,0,55,47" offsetX="-78.0159" offsetY="-20.2691" name="17-Braco_D-1.png" scaleX="4"/>
+  <sprite scaleY="4" angleDegrees="0" rect="403,0,44,47" offsetX="3.84244" offsetY="43.4064" name="14-Olho_D-1.png" scaleX="4"/>
+  <sprite scaleY="4" angleDegrees="0" rect="365,0,38,46" offsetX="36.4843" offsetY="41.3269" name="11-Olho_E-1.png" scaleX="4"/>
+  <sprite scaleY="4" angleDegrees="0" rect="253,0,112,43" offsetX="53.2227" offsetY="-83.2517" name="35-mangueira-1.png" scaleX="4"/>
+  <sprite scaleY="4" angleDegrees="0" rect="183,0,70,33" offsetX="42.6926" offsetY="21.834" name="18-Nariz-1.png" scaleX="4"/>
+  <sprite scaleY="4" angleDegrees="0" rect="114,0,69,33" offsetX="13.9911" offsetY="5.30494" name="26-Dente-1.png" scaleX="4"/>
+  <sprite scaleY="4" angleDegrees="0" rect="25,0,89,32" offsetX="4.14" offsetY="13.0933" name="12-Boca-1.png" scaleX="4"/>
+  <sprite scaleY="4" angleDegrees="0" rect="0,0,25,24" offsetX="38.7017" offsetY="40.9219" name="13-Pupila_E-1.png" scaleX="4"/>
+  <sprite scaleY="4" angleDegrees="0" rect="865,0,63,352" offsetX="-22.9371" offsetY="-256.107" name="24-Mao-1.png" scaleX="4"/>
+  <sprite scaleY="4" angleDegrees="0" rect="618,0,48,54" offsetX="-29.6651" offsetY="73.8759" name="25-Orelha_D-2.png" scaleX="4"/>
+  <sprite scaleY="4" angleDegrees="0" rect="502,0,65,52" offsetX="43.4492" offsetY="-55.1239" name="9-Braco_E-1.png" scaleX="4"/>
+  <sprite scaleY="4" angleDegrees="0" rect="403,0,44,47" offsetX="3.84244" offsetY="43.4064" name="31-Olho_D-1.png" scaleX="4"/>
+  <sprite scaleY="4" angleDegrees="0" rect="183,0,70,33" offsetX="42.6926" offsetY="21.834" name="22-Nariz-1.png" scaleX="4"/>
+  <sprite scaleY="4" angleDegrees="0" rect="25,0,89,32" offsetX="4.14" offsetY="13.0933" name="28-Boca-1.png" scaleX="4"/>
+  <sprite scaleY="4" angleDegrees="0" rect="0,0,25,24" offsetX="3.98306" offsetY="43.0459" name="23-Pupila_D-1.png" scaleX="4"/>
+  <sprite scaleY="4" angleDegrees="0" rect="740,0,125,189" offsetX="-20.5014" offsetY="-24.6853" name="7-Corpo-1.png" scaleX="4"/>
+  <sprite scaleY="4" angleDegrees="0" rect="447,0,55,47" offsetX="-78.0159" offsetY="-20.2691" name="21-Braco_D-1.png" scaleX="4"/>
+  <sprite scaleY="4" angleDegrees="0" rect="114,0,69,33" offsetX="13.9911" offsetY="5.30494" name="8-Dente-1.png" scaleX="4"/>
+  <sprite scaleY="4" angleDegrees="0" rect="0,0,25,24" offsetX="38.7017" offsetY="40.9219" name="29-Pupila_E-1.png" scaleX="4"/>
+  <sprite scaleY="4" angleDegrees="0" rect="567,0,51,53" offsetX="46.3635" offsetY="61.4936" name="32-Orelha_E-2.png" scaleX="4"/>
+  <sprite scaleY="4" angleDegrees="0" rect="0,0,25,24" offsetX="3.98306" offsetY="43.0459" name="15-Pupila_D-1.png" scaleX="4"/>
+  <sprite scaleY="4" angleDegrees="0" rect="365,0,38,46" offsetX="36.4843" offsetY="41.3269" name="27-Olho_E-1.png" scaleX="4"/>
+ </spritesheet>
+ <spritesheet resolution="iphone-retina" width="2048" height="1024" name="sheet_Top" filename="spriteSheets/sheet_Top-iphone-retina.png">
+  <sprite scaleY="1.69014" angleDegrees="0" rect="1845,0,133,817" offsetX="-54.2844" offsetY="-606.119" name="16-Mao-1.png" scaleX="1.69014"/>
+  <sprite scaleY="1.69014" angleDegrees="0" rect="1565,0,280,431" offsetX="-48.5201" offsetY="-58.4219" name="20-Corpo-1.png" scaleX="1.69014"/>
+  <sprite scaleY="1.69014" angleDegrees="0" rect="1407,0,158,252" offsetX="-144.193" offsetY="-91.235" name="33-extintor-1.png" scaleX="1.69014"/>
+  <sprite scaleY="1.69014" angleDegrees="0" rect="1310,0,97,111" offsetX="-70.2075" offsetY="174.84" name="19-Orelha_D-2.png" scaleX="1.69014"/>
+  <sprite scaleY="1.69014" angleDegrees="0" rect="1205,0,105,110" offsetX="109.727" offsetY="145.535" name="10-Orelha_E-2.png" scaleX="1.69014"/>
+  <sprite scaleY="1.69014" angleDegrees="0" rect="1067,0,138,107" offsetX="102.83" offsetY="-130.46" name="30-Braco_E-1.png" scaleX="1.69014"/>
+  <sprite scaleY="1.69014" angleDegrees="0" rect="979,0,88,96" offsetX="9.09377" offsetY="102.729" name="14-Olho_D-1.png" scaleX="1.69014"/>
+  <sprite scaleY="1.69014" angleDegrees="0" rect="864,0,115,95" offsetX="-184.638" offsetY="-47.9703" name="17-Braco_D-1.png" scaleX="1.69014"/>
+  <sprite scaleY="1.69014" angleDegrees="0" rect="789,0,75,93" offsetX="86.3462" offsetY="97.8069" name="11-Olho_E-1.png" scaleX="1.69014"/>
+  <sprite scaleY="1.69014" angleDegrees="0" rect="539,0,250,87" offsetX="125.96" offsetY="-197.029" name="35-mangueira-1.png" scaleX="1.69014"/>
+  <sprite scaleY="1.69014" angleDegrees="0" rect="389,0,150,62" offsetX="101.039" offsetY="51.6738" name="18-Nariz-1.png" scaleX="1.69014"/>
+  <sprite scaleY="1.69014" angleDegrees="0" rect="240,0,149,62" offsetX="33.1122" offsetY="12.555" name="26-Dente-1.png" scaleX="1.69014"/>
+  <sprite scaleY="1.69014" angleDegrees="0" rect="44,0,196,59" offsetX="9.798" offsetY="30.9875" name="12-Boca-1.png" scaleX="1.69014"/>
+  <sprite scaleY="1.69014" angleDegrees="0" rect="0,0,44,42" offsetX="91.594" offsetY="96.8484" name="13-Pupila_E-1.png" scaleX="1.69014"/>
+  <sprite scaleY="1.69014" angleDegrees="0" rect="1845,0,133,817" offsetX="-54.2844" offsetY="-606.119" name="24-Mao-1.png" scaleX="1.69014"/>
+  <sprite scaleY="1.69014" angleDegrees="0" rect="1310,0,97,111" offsetX="-70.2075" offsetY="174.84" name="25-Orelha_D-2.png" scaleX="1.69014"/>
+  <sprite scaleY="1.69014" angleDegrees="0" rect="1067,0,138,107" offsetX="102.83" offsetY="-130.46" name="9-Braco_E-1.png" scaleX="1.69014"/>
+  <sprite scaleY="1.69014" angleDegrees="0" rect="864,0,115,95" offsetX="-184.638" offsetY="-47.9703" name="21-Braco_D-1.png" scaleX="1.69014"/>
+  <sprite scaleY="1.69014" angleDegrees="0" rect="389,0,150,62" offsetX="101.039" offsetY="51.6738" name="22-Nariz-1.png" scaleX="1.69014"/>
+  <sprite scaleY="1.69014" angleDegrees="0" rect="44,0,196,59" offsetX="9.798" offsetY="30.9875" name="28-Boca-1.png" scaleX="1.69014"/>
+  <sprite scaleY="1.69014" angleDegrees="0" rect="0,0,44,42" offsetX="9.42658" offsetY="101.875" name="23-Pupila_D-1.png" scaleX="1.69014"/>
+  <sprite scaleY="1.69014" angleDegrees="0" rect="1565,0,280,431" offsetX="-48.5201" offsetY="-58.4219" name="7-Corpo-1.png" scaleX="1.69014"/>
+  <sprite scaleY="1.69014" angleDegrees="0" rect="979,0,88,96" offsetX="9.09377" offsetY="102.729" name="31-Olho_D-1.png" scaleX="1.69014"/>
+  <sprite scaleY="1.69014" angleDegrees="0" rect="240,0,149,62" offsetX="33.1122" offsetY="12.555" name="8-Dente-1.png" scaleX="1.69014"/>
+  <sprite scaleY="1.69014" angleDegrees="0" rect="0,0,44,42" offsetX="91.594" offsetY="96.8484" name="29-Pupila_E-1.png" scaleX="1.69014"/>
+  <sprite scaleY="1.69014" angleDegrees="0" rect="1205,0,105,110" offsetX="109.727" offsetY="145.535" name="32-Orelha_E-2.png" scaleX="1.69014"/>
+  <sprite scaleY="1.69014" angleDegrees="0" rect="0,0,44,42" offsetX="9.42658" offsetY="101.875" name="15-Pupila_D-1.png" scaleX="1.69014"/>
+  <sprite scaleY="1.69014" angleDegrees="0" rect="789,0,75,93" offsetX="86.3462" offsetY="97.8069" name="27-Olho_E-1.png" scaleX="1.69014"/>
+ </spritesheet>
+</spritesheets>

@@ -16,18 +16,15 @@ MonoBehaviour:
   - name: BtnMenu
     volume: 1
     mixer: {fileID: 0}
-    sounds:
-    - {fileID: 8300000, guid: 3d591fd37824088498905c05ea8041cd, type: 3}
+    sounds: []
   - name: BtnBack
     volume: 1
     mixer: {fileID: 0}
-    sounds:
-    - {fileID: 8300000, guid: 892793a4596d28441ae383a309a663c2, type: 3}
+    sounds: []
   - name: BtnHover
     volume: 1
     mixer: {fileID: 0}
-    sounds:
-    - {fileID: 8300000, guid: 2984f004a646ffd408781db7e8add146, type: 3}
+    sounds: []
   - name: Pulo
     volume: 1
     mixer: {fileID: 0}
@@ -35,5 +32,4 @@ MonoBehaviour:
   - name: Esguicho
     volume: 1
     mixer: {fileID: 0}
-    sounds:
-    - {fileID: 8300000, guid: 3d591fd37824088498905c05ea8041cd, type: 3}
+    sounds: []

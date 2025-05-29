@@ -1,0 +1,494 @@
+fileFormatVersion: 2
+guid: c335869896736034ab890660671f5024
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2934786113214551309
+    second: sheet_Top-ipad_0
+  - first:
+      213: -5574913032154730206
+    second: sheet_Top-ipad_1
+  - first:
+      213: -4158099134571332353
+    second: sheet_Top-ipad_2
+  - first:
+      213: -4731584126547917892
+    second: sheet_Top-ipad_3
+  - first:
+      213: 235511563532758286
+    second: sheet_Top-ipad_4
+  - first:
+      213: 6419572406968264648
+    second: sheet_Top-ipad_5
+  - first:
+      213: 1808529869652799068
+    second: sheet_Top-ipad_6
+  - first:
+      213: 4909986341389644697
+    second: sheet_Top-ipad_7
+  - first:
+      213: -413540141577391421
+    second: sheet_Top-ipad_8
+  - first:
+      213: -3233339899677528002
+    second: sheet_Top-ipad_9
+  - first:
+      213: -7233415614660265767
+    second: sheet_Top-ipad_10
+  - first:
+      213: 281583310402253506
+    second: sheet_Top-ipad_11
+  - first:
+      213: -2860295592509004925
+    second: sheet_Top-ipad_12
+  - first:
+      213: -5758368234422460241
+    second: sheet_Top-ipad_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sheet_Top-ipad_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 989
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0517e9bb647ab820800000000000000
+      internalID: 2934786113214551309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Top-ipad_1
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 974
+        width: 167
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 221b8b8622ee1a2b0800000000000000
+      internalID: -5574913032154730206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Top-ipad_2
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 971
+        width: 126
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffc340f1ed67b46c0800000000000000
+      internalID: -4158099134571332353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Top-ipad_3
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 971
+        width: 128
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb30c305e49065eb0800000000000000
+      internalID: -4731584126547917892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Top-ipad_4
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 949
+        width: 216
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0deddce484b44300800000000000000
+      internalID: 235511563532758286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Top-ipad_5
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 944
+        width: 59
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c72e3f7717e61950800000000000000
+      internalID: 6419572406968264648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Top-ipad_6
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 941
+        width: 97
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5ea65e9550391910800000000000000
+      internalID: 1808529869652799068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Top-ipad_7
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 941
+        width: 71
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 993bc823096c32440800000000000000
+      internalID: 4909986341389644697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Top-ipad_8
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 931
+        width: 116
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c23ae8ae6fc24af0800000000000000
+      internalID: -413540141577391421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Top-ipad_9
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 927
+        width: 78
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e30bf910e7ed023d0800000000000000
+      internalID: -3233339899677528002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Top-ipad_10
+      rect:
+        serializedVersion: 2
+        x: 1192
+        y: 930
+        width: 80
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d8396f92debd9b90800000000000000
+      internalID: -7233415614660265767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Top-ipad_11
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 802
+        width: 135
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c27437678268e300800000000000000
+      internalID: 281583310402253506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Top-ipad_12
+      rect:
+        serializedVersion: 2
+        x: 1437
+        y: 640
+        width: 236
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 383a2e720503e48d0800000000000000
+      internalID: -2860295592509004925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Top-ipad_13
+      rect:
+        serializedVersion: 2
+        x: 1682
+        y: 291
+        width: 114
+        height: 723
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa02b55999a2610b0800000000000000
+      internalID: -5758368234422460241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      sheet_Top-ipad_0: 2934786113214551309
+      sheet_Top-ipad_1: -5574913032154730206
+      sheet_Top-ipad_10: -7233415614660265767
+      sheet_Top-ipad_11: 281583310402253506
+      sheet_Top-ipad_12: -2860295592509004925
+      sheet_Top-ipad_13: -5758368234422460241
+      sheet_Top-ipad_2: -4158099134571332353
+      sheet_Top-ipad_3: -4731584126547917892
+      sheet_Top-ipad_4: 235511563532758286
+      sheet_Top-ipad_5: 6419572406968264648
+      sheet_Top-ipad_6: 1808529869652799068
+      sheet_Top-ipad_7: 4909986341389644697
+      sheet_Top-ipad_8: -413540141577391421
+      sheet_Top-ipad_9: -3233339899677528002
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

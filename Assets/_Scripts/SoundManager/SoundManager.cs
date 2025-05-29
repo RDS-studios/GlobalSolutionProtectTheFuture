@@ -16,7 +16,7 @@ namespace SmallHedge.SoundManager
 
         private void Awake()
         {
-            DontDestroyOnLoad(gameObject);
+           
             if(!instance)
             {
                 instance = this;

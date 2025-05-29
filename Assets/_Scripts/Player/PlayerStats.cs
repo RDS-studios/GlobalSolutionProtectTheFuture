@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
+using ToonBoom.Harmony;
 using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
@@ -9,66 +9,49 @@ public class PlayerStats : MonoBehaviour
     public int lives = 3;
     public int coins = 0;
     public bool canMove = true;
-    [SerializeField] GameObject[] hearts;
+    [SerializeField] List<GameObject> hearts = new List<GameObject>();
     public bool hasWaterJet = false;
-
-
 
     public List<GameObject> moedasColetadas = new List<GameObject>();
 
-    
-
-
     [SerializeField] GameSaver gameSaver;
+
+    [SerializeField] HarmonyRenderer harmonyRendererNoJet;
+    [SerializeField] HarmonyRenderer harmonyRendererWithJet;
 
     void Start()
     {
         canMove = true;
         gameSaver = GameObject.FindGameObjectWithTag("GameSaver").GetComponent<GameSaver>();
+        hearts.Clear();
+
+        hearts.Add(GameObject.FindGameObjectWithTag("Heart1"));
+        hearts.Add(GameObject.FindGameObjectWithTag("Heart2"));
+        hearts.Add(GameObject.FindGameObjectWithTag("Heart3"));
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (coins >= 50)
         {
             Heal();
-            coins = 0; // Reset coins after healing 
-
-
+            coins = 0;
         }
+
+        harmonyRendererNoJet.enabled = !hasWaterJet;
+        harmonyRendererWithJet.enabled = hasWaterJet;
     }
-
-
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.tag == "Enemie")
+        if (collision.collider.CompareTag("Enemie") && !immune)
         {
-            if (!immune) // Check if player is not immune to damage
-            {
+            TakeDmg();
 
-
-
-
-                TakeDmg();
-                if (collision.gameObject.transform.position.x > transform.position.x)
-                {
-                    Rigidbody2D rb = GetComponent<Rigidbody2D>();
-                    rb.AddForce(new Vector2(-3.7f, 4f), ForceMode2D.Impulse);
-                }
-                else
-                {
-                    Rigidbody2D rb = GetComponent<Rigidbody2D>();
-                    rb.AddForce(new Vector2(-3.7f, 4f), ForceMode2D.Impulse);
-
-                }
-
-            }
+            Rigidbody2D rb = GetComponent<Rigidbody2D>();
+            float forceX = collision.transform.position.x > transform.position.x ? -3.7f : 3.7f;
+            rb.AddForce(new Vector2(forceX, 4f), ForceMode2D.Impulse);
         }
-
-
-
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -76,98 +59,79 @@ public class PlayerStats : MonoBehaviour
         if (collision.CompareTag("Coin"))
         {
             coins++;
-            collision.GetComponent<SpriteRenderer>().enabled = false; // Hide the coin sprite
-            collision.tag = "Untagged"; // Change tag to prevent further collection
+            collision.GetComponent<SpriteRenderer>().enabled = false;
+            collision.tag = "Untagged";
             moedasColetadas.Add(collision.gameObject);
-          
         }
-       
     }
 
-
     void TakeDmg()
+    {
+        StartCoroutine(Iframes());
+
+        if (lives > 0)
         {
-            StartCoroutine(Iframes()); // Start invincibility frames    
-            if (lives > 0)
-            {
-                lives--;
-                hearts[lives].GetComponent<Animator>().SetTrigger("leave");
+            lives--;
+            hearts[lives].GetComponent<Animator>().SetTrigger("leave");
+        }
 
-            }
+        if (lives <= 0)
+        {
+            StartCoroutine(Die());
 
-            if (lives <= 0)
-            {
-                StartCoroutine(Die());
             foreach (GameObject moeda in moedasColetadas)
             {
-                moeda.GetComponent<SpriteRenderer>().enabled = true; // Hide collected coins
+                moeda.GetComponent<SpriteRenderer>().enabled = true;
                 moeda.tag = "Coin";
             }
-             
-
-            }
-            canMove = false;
-            StartCoroutine(moveCD());
-        }
-        IEnumerator Iframes()
-        {
-            immune = true;
-            yield return new WaitForSeconds(0.5f);
-            immune = false; 
-
         }
 
-        IEnumerator moveCD()
-        {
-            yield return new WaitForSeconds(0.4f);
-            canMove = true;
-        }
-    
+        canMove = false;
+        StartCoroutine(MoveCooldown());
+    }
+
+    IEnumerator Iframes()
+    {
+        immune = true;
+        yield return new WaitForSeconds(0.5f);
+        immune = false;
+    }
+
+    IEnumerator MoveCooldown()
+    {
+        yield return new WaitForSeconds(0.4f);
+        canMove = true;
+    }
 
     public void Heal()
     {
-        if (lives < hearts.Length)
+        if (lives < hearts.Count)
         {
             hearts[lives].GetComponent<Animator>().SetTrigger("enter");
             lives++;
         }
     }
 
-
-
-
     IEnumerator Die()
     {
-        
         canMove = false;
         transform.position = new Vector3(gameSaver.transformCheckpoint.position.x, gameSaver.transformCheckpoint.position.y, transform.position.z);
         yield return new WaitForSeconds(2.5f);
         canMove = true;
-        // Reset heart visuals
-        for (int i = 0; i < hearts.Length; i++)
+
+        // Restore visuals
+        foreach (GameObject heart in hearts)
         {
-            hearts[i].GetComponent<Animator>().SetTrigger("enter");
+            heart.GetComponent<Animator>().SetTrigger("enter");
         }
 
-        // Restore lives and other saved stats
         lives = PlayerPrefs.GetInt("PlayerLives");
         coins = PlayerPrefs.GetInt("PlayerCoins");
         hasWaterJet = PlayerPrefs.GetInt("HasWaterJet") == 1;
 
-        // Apply actual heart count (hide the extras if needed)
-        for (int i = lives; i < hearts.Length; i++)
+        for (int i = lives; i < hearts.Count; i++)
         {
             hearts[i].GetComponent<Animator>().SetTrigger("leave");
         }
-
-
-
-
-
-
-
-
-
-
     }
-} 
+}

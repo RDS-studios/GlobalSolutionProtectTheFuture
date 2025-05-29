@@ -1,0 +1,62 @@
+<drawingAnimations>
+ <drawingAnimation spritesheet="sheet_Top" name="_Top">
+  <drawing node="Corpo-G_Pupila_D" name="23-Pupila_D" drwId="1"/>
+  <drawing node="Corpo-G_Olho_D" name="31-Olho_D" drwId="2"/>
+  <drawing node="Corpo-G_Nariz" name="22-Nariz" drwId="3"/>
+  <drawing node="Corpo-G_Pupila_E" name="29-Pupila_E" drwId="4"/>
+  <drawing node="Corpo-G_Orelha_D" name="25-Orelha_D" drwId="5"/>
+  <drawing node="Corpo-G_Olho_E" name="27-Olho_E" drwId="6"/>
+  <drawing node="Corpo-G_Orelha_E" name="32-Orelha_E" drwId="7"/>
+  <drawing node="Corpo-G_Braco_D" name="21-Braco_D" drwId="8"/>
+  <drawing node="Corpo-G_Boca" name="28-Boca" drwId="9"/>
+  <drawing node="Corpo-G_Dente" name="26-Dente" drwId="10"/>
+  <drawing node="Corpo-G_Corpo" name="20-Corpo" drwId="11"/>
+  <drawing node="Corpo-G_Braco_E" name="30-Braco_E" drwId="12"/>
+  <drawing node="Corpo-G_Mao" name="24-Mao" drwId="13"/>
+  <drawing node="Mao-P-G_Pupila_D" name="15-Pupila_D" drwId="14">
+   <drw skinId="0" frame="1" repeat="31" name="15-Pupila_D-1.png"/>
+  </drawing>
+  <drawing node="Mao-P-G_Olho_D" name="14-Olho_D" drwId="15">
+   <drw skinId="0" frame="1" repeat="31" name="14-Olho_D-1.png"/>
+  </drawing>
+  <drawing node="Mao-P-G_Nariz" name="18-Nariz" drwId="16">
+   <drw skinId="0" frame="1" repeat="31" name="18-Nariz-1.png"/>
+  </drawing>
+  <drawing node="Mao-P-G_Pupila_E" name="13-Pupila_E" drwId="17">
+   <drw skinId="0" frame="1" repeat="31" name="13-Pupila_E-1.png"/>
+  </drawing>
+  <drawing node="Mao-P-G_Orelha_D" name="19-Orelha_D" drwId="18">
+   <drw skinId="0" frame="1" repeat="31" name="19-Orelha_D-2.png"/>
+  </drawing>
+  <drawing node="Mao-P-G_Olho_E" name="11-Olho_E" drwId="19">
+   <drw skinId="0" frame="1" repeat="31" name="11-Olho_E-1.png"/>
+  </drawing>
+  <drawing node="Mao-P-G_Orelha_E" name="10-Orelha_E" drwId="20">
+   <drw skinId="0" frame="1" repeat="31" name="10-Orelha_E-2.png"/>
+  </drawing>
+  <drawing node="Mao-P-G_Braco_D" name="17-Braco_D" drwId="21">
+   <drw skinId="0" frame="1" repeat="31" name="17-Braco_D-1.png"/>
+  </drawing>
+  <drawing node="Mao-P-G_Boca" name="12-Boca" drwId="22">
+   <drw skinId="0" frame="1" repeat="31" name="12-Boca-1.png"/>
+  </drawing>
+  <drawing node="Mao-P-G_Dente" name="8-Dente" drwId="23">
+   <drw skinId="0" frame="1" repeat="31" name="8-Dente-1.png"/>
+  </drawing>
+  <drawing node="Mao-P-G_Corpo" name="7-Corpo" drwId="24">
+   <drw skinId="0" frame="1" repeat="31" name="7-Corpo-1.png"/>
+  </drawing>
+  <drawing node="Mao-P-G_mangueira" name="35-mangueira" drwId="25">
+   <drw skinId="0" frame="1" repeat="31" name="35-mangueira-1.png"/>
+  </drawing>
+  <drawing node="Mao-P-G_Braco_E" name="9-Braco_E" drwId="26">
+   <drw skinId="0" frame="1" repeat="31" name="9-Braco_E-1.png"/>
+  </drawing>
+  <drawing node="Mao-P-G_extintor" name="33-extintor" drwId="27">
+   <drw skinId="0" frame="1" repeat="31" name="33-extintor-1.png"/>
+  </drawing>
+  <drawing node="Mao-P-G_Mao" name="16-Mao" drwId="28">
+   <drw skinId="0" frame="1" repeat="31" name="16-Mao-1.png"/>
+  </drawing>
+ </drawingAnimation>
+</drawingAnimations>

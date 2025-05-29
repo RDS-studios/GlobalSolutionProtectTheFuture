@@ -1,0 +1,20 @@
+<stages>
+ <stage name="parado_">
+  <node groupId="0" skinId="0" name="Mao-P-G_Pupila_D" drwId="14"/>
+  <node groupId="0" skinId="0" name="Mao-P-G_Olho_D" drwId="15"/>
+  <node groupId="0" skinId="0" name="Mao-P-G_Nariz" drwId="16"/>
+  <node groupId="0" skinId="0" name="Mao-P-G_Pupila_E" drwId="17"/>
+  <node groupId="0" skinId="0" name="Mao-P-G_Orelha_D" drwId="18"/>
+  <node groupId="0" skinId="0" name="Mao-P-G_Olho_E" drwId="19"/>
+  <node groupId="0" skinId="0" name="Mao-P-G_Orelha_E" drwId="20"/>
+  <node groupId="0" skinId="0" name="Mao-P-G_Braco_D" drwId="21"/>
+  <node groupId="0" skinId="0" name="Mao-P-G_Boca" drwId="22"/>
+  <node groupId="0" skinId="0" name="Mao-P-G_Dente" drwId="23"/>
+  <node groupId="0" skinId="0" name="Mao-P-G_Corpo" drwId="24"/>
+  <node groupId="0" skinId="0" name="Mao-P-G_mangueira" drwId="25"/>
+  <node groupId="0" skinId="0" name="Mao-P-G_Braco_E" drwId="26"/>
+  <node groupId="0" skinId="0" name="Mao-P-G_extintor" drwId="27"/>
+  <node groupId="0" skinId="0" name="Mao-P-G_Mao" drwId="28"/>
+  <play drawingAnimation="_Top" name="Top" skeleton="Top" animation="_Top"/>
+ </stage>
+</stages>

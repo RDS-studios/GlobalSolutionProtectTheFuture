@@ -10,6 +10,12 @@ TagManager:
   - Checkpoint
   - GameSaver
   - Coin
+  - Target
+  - CanvasUI
+  - Heart1
+  - Heart2
+  - Heart3
+  - AmmoCounter
   layers:
   - Default
   - TransparentFX

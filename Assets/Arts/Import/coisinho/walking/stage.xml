@@ -1,0 +1,22 @@
+<stages>
+ <stage name="andando_">
+  <node groupId="0" skinId="0" name="Corpo-G_Pupila_D" drwId="1"/>
+  <node groupId="0" skinId="0" name="Corpo-G_Olho_D" drwId="2"/>
+  <node groupId="0" skinId="0" name="Corpo-G_Nariz" drwId="3"/>
+  <node groupId="0" skinId="0" name="Corpo-G_Pupila_E" drwId="4"/>
+  <node groupId="0" skinId="0" name="Corpo-G_Orelha_D" drwId="5"/>
+  <node groupId="0" skinId="0" name="Corpo-G_Olho_E" drwId="6"/>
+  <node groupId="0" skinId="0" name="Corpo-G_Orelha_E" drwId="7"/>
+  <node groupId="0" skinId="0" name="Corpo-G_Braco_D" drwId="8"/>
+  <node groupId="0" skinId="0" name="Corpo-G_Boca" drwId="9"/>
+  <node groupId="0" skinId="0" name="Corpo-G_Dente" drwId="10"/>
+  <node groupId="0" skinId="0" name="Corpo-G_Corpo" drwId="11"/>
+  <node groupId="0" skinId="0" name="Corpo-G_mangueira" drwId="12"/>
+  <node groupId="0" skinId="0" name="Corpo-G_Braco_E" drwId="13"/>
+  <node groupId="0" skinId="0" name="Corpo-G_extintor" drwId="14"/>
+  <node groupId="0" skinId="0" name="Corpo-G_Mao" drwId="15"/>
+  <node groupId="0" skinId="0" name="Mao-P-G_mangueira" drwId="27"/>
+  <node groupId="0" skinId="0" name="Mao-P-G_extintor" drwId="29"/>
+  <play drawingAnimation="_Top" name="Top" skeleton="Top_2" animation="_Top"/>
+ </stage>
+</stages>
