@@ -10,6 +10,8 @@ public class PlayerMovimentation : MonoBehaviour
     [SerializeField] PlayerStats playerStats;
     [SerializeField] Animator animator;
     [SerializeField] Animator animator2;
+    [SerializeField] HookScript hookScript; // Reference to the HookScript for pulling objects
+    [SerializeField] Animator hookAnimator;
 
     [Header("Movement Settings")]
     [SerializeField] float speed = 5f;
@@ -75,30 +77,8 @@ public class PlayerMovimentation : MonoBehaviour
 
         if (playerInputs.actions["Hook"].triggered && canPull)
         {
-            GameObject currentTarget = FindClosestHighest();
-
-            if (currentTarget != null)
-            {
-                Vector2 direction = (currentTarget.transform.position - transform.position).normalized;
-                HookPoint hookShow = currentTarget.GetComponent<HookPoint>();
-                if (hookShow != null)
-                    hookShow.isAimed = false;
-
-                rb2d.linearVelocity = direction * pullStrength;
-
-                // Optional: Disable movement while being pulled
-                playerStats.canMove = false;
-
-                // Optional: Start coroutine to re-enable movement after some time
-                StartCoroutine(EnableMovementAfterDelay(0.6f)); // 0.5 seconds delay
-                StartCoroutine(HookCD()); // Start cooldown for pulling     
-            }
+           StartCoroutine(Hook());
         }
-
-
-
-
-
 
 
 
@@ -106,35 +86,110 @@ public class PlayerMovimentation : MonoBehaviour
         {
             GameObject currentTarget = FindClosestHighest();
 
-            if (currentTarget != previousTarget)
+            // Reset previous target's aiming visuals if it exists and is different from currentTarget
+            if (previousTarget != null && previousTarget != currentTarget)
             {
-                // Reset previous target
-                if (previousTarget != null)
-                {
-                   HookPoint hookShow = previousTarget.GetComponent<HookPoint>();
-                    if (hookShow != null)
-                        hookShow.isAimed = false;
-                }
-
-                // Set new target
-                if (currentTarget != null && canPull)
-                {
-                    HookPoint hookShow = currentTarget.GetComponent<HookPoint>();
-                    if (hookShow != null)
-                        hookShow.isAimed = true;
-
-                    Debug.Log("Selected: " + currentTarget.name);
-                }
-                else {
-                    HookPoint hookShow = currentTarget.GetComponent<HookPoint>();
-                    if (hookShow != null)
-                        hookShow.isAimed = false;
-                }
-
-                    previousTarget = currentTarget;
+                HookPoint previousHookPoint = previousTarget.GetComponent<HookPoint>();
+                if (previousHookPoint != null)
+                    previousHookPoint.isAimed = false;
             }
+
+            // Set new target's aiming visuals if target exists and canPull is true
+            if (currentTarget != null && canPull)
+            {
+                HookPoint currentHookPoint = currentTarget.GetComponent<HookPoint>();
+                if (currentHookPoint != null)
+                    currentHookPoint.isAimed = true;
+            }
+            else if (currentTarget != null) // if can't pull, remove aiming
+            {
+                HookPoint currentHookPoint = currentTarget.GetComponent<HookPoint>();
+                if (currentHookPoint != null)
+                    currentHookPoint.isAimed = false;
+            }
+
+            // Update previousTarget every frame regardless
+            previousTarget = currentTarget;
         }
     }
+
+    IEnumerator Hook()
+    {
+        hookAnimator.SetTrigger("enter");
+        yield return new WaitForSeconds(0.6f);
+        GameObject currentTarget = FindClosestHighest();
+
+        if (currentTarget != null)
+        {
+
+            Vector2 direction = (currentTarget.transform.position - transform.position).normalized;
+
+            HookPoint hookShow = currentTarget.GetComponent<HookPoint>();
+            if (hookShow != null)
+                hookShow.isAimed = false;
+
+            rb2d.linearVelocity = direction * pullStrength;
+
+            // Start the hook movement coroutine
+            StartCoroutine(MoveHookToTarget(currentTarget.transform.position));
+            playerStats.canMove = false;
+            StartCoroutine(EnableMovementAfterDelay(0.6f));
+            StartCoroutine(HookCD());
+        }
+    }
+
+
+
+
+
+    private IEnumerator MoveHookToTarget(Vector3 worldTargetPos)
+    {
+        float hookSpeed = 90f;
+        Transform hookTransform = hookScript.targetTransform;
+
+        // Store original local position and parent before unparenting
+        Vector3 originalLocalPos = hookTransform.localPosition;
+        Transform originalParent = hookTransform.parent;
+
+        // Unparent to move freely in world space
+        hookTransform.parent = null;
+
+        // Move to target position in world space
+        while (Vector3.Distance(hookTransform.position, worldTargetPos) > 0.1f)
+        {
+            hookTransform.position = Vector3.MoveTowards(
+                hookTransform.position,
+                worldTargetPos,
+                hookSpeed * Time.deltaTime
+            );
+            yield return null;
+        }
+        hookTransform.position = worldTargetPos;
+
+        yield return new WaitForSeconds(0.6f);
+
+        // Move back to original world position
+        Vector3 originalWorldPos = originalParent.TransformPoint(originalLocalPos); // convert local to world
+        while (Vector3.Distance(hookTransform.position, originalWorldPos) > 0.1f)
+        {
+            hookTransform.position = Vector3.MoveTowards(
+                hookTransform.position,
+                originalWorldPos,
+                hookSpeed * Time.deltaTime
+            );
+            yield return null;
+        }
+
+        // Snap to exact original world position
+        hookTransform.position = originalWorldPos;
+
+        // Reparent back to original parent
+        hookTransform.parent = originalParent;
+
+        // Reset localPosition relative to parent to avoid offset
+        hookTransform.localPosition = originalLocalPos;
+    }
+
 
     private void OnCollisionEnter2D(Collision2D collision)
     {

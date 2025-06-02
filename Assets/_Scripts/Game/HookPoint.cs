@@ -3,7 +3,7 @@ using UnityEngine;
 public class HookPoint : MonoBehaviour
 {
     public bool isAimed = false;
-
+    [SerializeField] GameObject showTargeted;
     void Start()
     {
 
@@ -14,11 +14,11 @@ public class HookPoint : MonoBehaviour
     {
         if (isAimed)
         {
-            GetComponent<SpriteRenderer>().color = Color.red; // Change color to red when aimed 
+           showTargeted.SetActive(true); // Show the targeted object when aimed
         }
         else
         {
-            GetComponent<SpriteRenderer>().color = Color.white; // Change color back to white when not aimed
+          showTargeted.SetActive(false); // Hide the targeted object when not aimed
         }
     }
 }

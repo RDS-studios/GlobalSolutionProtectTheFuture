@@ -16,6 +16,7 @@ TagManager:
   - Heart2
   - Heart3
   - AmmoCounter
+  - BossHand
   layers:
   - Default
   - TransparentFX
@@ -28,7 +29,7 @@ TagManager:
   - deadenemie
   - Ground
   - Checkpoint
-  - 
+  - BossHand
   - 
   - 
   - 

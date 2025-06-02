@@ -53,13 +53,14 @@ public class PlayerAttack : MonoBehaviour
         {
             canAttack = false;
             ammo--;
-            SoundManager.PlaySound(SoundType.Esguicho); // Play water jet sound
+           
             GameObject proj = Instantiate(waterJetPrefab, spawnPos.position, Quaternion.identity); // Instantiate water jet                                               
             Rigidbody2D rbproj = proj.GetComponent<Rigidbody2D>();
             rbproj.AddForce(new Vector2(transform.localScale.x * 10f, 3.5f), ForceMode2D.Impulse); // Apply force to the projectile
 
             yield return new WaitForSeconds(attackCooldown); // Wait for cooldown
             canAttack = true; // Reset attack flag
+            SoundManager.PlaySound(SoundType.Esguicho); // Play water jet sound
         }
         
     }

@@ -1,0 +1,196 @@
+using System.Collections;
+using UnityEngine;
+
+public class BossHand : MonoBehaviour
+{
+    [SerializeField] Animator animator;
+    [SerializeField] bool isFollowingPlayer = false;
+    [SerializeField] Transform originalPos;
+    [SerializeField] Transform playerTransform;
+    [SerializeField] BossHead bossHeadScript;
+    [SerializeField] bool isVunerable = false;
+    [SerializeField] int vida = 3; // Health of the hand
+    private bool isAttacking = false;
+
+    void Start()
+    {
+        playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+    }
+
+    void Update()
+    {
+        if (isAttacking) return; // prevent movement during attack
+
+        if (isFollowingPlayer)
+        {
+            transform.position = Vector3.MoveTowards(
+                transform.position,
+                new Vector3(playerTransform.position.x, transform.position.y),
+                0.1f
+            );
+        }
+        else
+        {
+            transform.position = Vector3.MoveTowards(transform.position, originalPos.position, 0.1f);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, originalPos.rotation, 0.1f);
+        }
+    }
+
+    public IEnumerator ChangeFollowRoutine()
+    {
+        isFollowingPlayer = !isFollowingPlayer;
+
+        if (isFollowingPlayer)
+        {
+            animator.SetTrigger("enterAttack");
+            bossHeadScript.isAttacking = true;
+
+            if (bossHeadScript.fase == 1)
+            {
+                yield return StartCoroutine(AttackPlayer1());
+            }
+            else if (bossHeadScript.fase == 3)
+            {
+                yield return StartCoroutine(AttackPlayer3());
+            }
+        }
+        else
+        {
+            transform.position = originalPos.position;
+            transform.rotation = originalPos.rotation;
+            bossHeadScript.isAttacking = false;
+        }
+    }
+
+
+    public IEnumerator AttackPlayer1()
+    {
+       
+
+        yield return new WaitForSeconds(4f); // Let enterAttack animation play
+        isAttacking = true;
+        // Step 1: Rise
+        Vector3 risePos = transform.position + Vector3.up * 2f;
+        while (Vector3.Distance(transform.position, risePos) > 0.05f)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, risePos, 5f * Time.deltaTime);
+            yield return null; // <-- this is crucial!
+        }
+
+        yield return new WaitForSeconds(0.2f);
+
+        // Step 2: Slam down
+        Vector3 slamPos = new Vector3(transform.position.x, playerTransform.position.y, transform.position.z); // or use playerTransform.position.y
+        while (Vector3.Distance(transform.position, slamPos) > 0.05f)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, slamPos, 20f * Time.deltaTime);
+            yield return null; // <-- this is also crucial!
+        }
+
+        // Step 3: Trigger attack animation
+
+        yield return new WaitForSeconds(1f);
+
+        // Step 4: Return to original position
+        while (Vector3.Distance(transform.position, originalPos.position) > 0.05f)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, originalPos.position, 5f * Time.deltaTime);
+            yield return null;
+        }
+
+        isAttacking = false;
+       
+        StartCoroutine( ChangeFollowRoutine()); // revert to normal behavior
+        animator.SetTrigger("attack");
+    }
+    
+   public IEnumerator SmashMiddleRoutine()
+    {
+        isAttacking = true;
+        animator.SetTrigger("enterAttack"); // Trigger the attack animation
+        bossHeadScript.isAttacking = true; // Set the boss head's attacking state   
+        print("Atacando2");
+        // Step 1: Slam downward
+        Vector3 slamPos = new Vector3(transform.position.x, playerTransform.position.y, transform.position.z); // Adjust Y as needed
+        while (Vector3.Distance(transform.position, slamPos) > 0.05f)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, slamPos, 20f * Time.deltaTime);
+            yield return null;
+        }
+
+        yield return new WaitForSeconds(0.5f); // Pause before moving to middle
+
+        // Step 2: Move to center of arena
+        Vector3 middlePos = new Vector3(0, transform.position.y, transform.position.z); // Adjust X=0 to center X
+        while (Vector3.Distance(transform.position, middlePos) > 0.05f)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, middlePos, 5f * Time.deltaTime);
+            yield return null;
+        }
+
+        yield return new WaitForSeconds(0.5f); // Optional pause
+
+        // Step 3: Return to original position
+        while (Vector3.Distance(transform.position, originalPos.position) > 0.05f)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, originalPos.position, 5f * Time.deltaTime);
+            yield return null;
+        }
+        animator.SetTrigger("attack"); // Trigger the exit animation
+        isAttacking = false;
+        bossHeadScript.isAttacking = false; // Reset the boss head's attacking state
+    }
+
+
+
+    public IEnumerator AttackPlayer3()
+    {
+
+
+        yield return new WaitForSeconds(4f); // Let enterAttack animation play
+        isAttacking = true;
+        // Step 1: Rise
+        Vector3 risePos = transform.position + Vector3.up * 2f;
+        while (Vector3.Distance(transform.position, risePos) > 0.05f)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, risePos, 5f * Time.deltaTime);
+            yield return null; // <-- this is crucial!
+        }
+
+        yield return new WaitForSeconds(0.2f);
+
+        // Step 2: Slam down
+        Vector3 slamPos = new Vector3(transform.position.x, playerTransform.position.y, transform.position.z); // or use playerTransform.position.y
+        while (Vector3.Distance(transform.position, slamPos) > 0.05f)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, slamPos, 20f * Time.deltaTime);
+            yield return null; // <-- this is also crucial!
+        }
+        isVunerable = true; // Set the hand to be vulnerable after the slam
+        yield return new WaitForSeconds(1.5f);  
+        
+       
+        yield return new WaitForSeconds(1f);
+        isVunerable = false; // Reset vulnerability after the attack
+        // Step 4: Return to original position
+        while (Vector3.Distance(transform.position, originalPos.position) > 0.05f)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, originalPos.position, 5f * Time.deltaTime);
+            yield return null;
+        }
+        
+        isAttacking = false;
+        StartCoroutine(ChangeFollowRoutine()); // revert to normal behavior
+        animator.SetTrigger("attack");
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("WaterJet") && isVunerable)
+        { 
+         vida--;
+        }
+
+        
+    }
+}
