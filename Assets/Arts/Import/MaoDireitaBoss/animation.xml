@@ -1,0 +1,24 @@
+<animations version="1">
+ <animation name="Default">
+  <attrlinks>
+   <attrlink node="mao" attr="offset.x" timedvalue="ATV-0CB0D91E82301835"/>
+   <attrlink node="mao" attr="offset.y" timedvalue="ATV-0CB0D91E82301836"/>
+   <attrlink node="mao" attr="scale.x" timedvalue="ATV-0CB0D91E82301838"/>
+   <attrlink node="mao" attr="rotation.anglez" timedvalue="ATV-0CB0D91E8230183A"/>
+  </attrlinks>
+  <timedvalues>
+   <linear name="ATV-0CB0D91E82301835">
+    <pt x="1" y="11.6444"/>
+   </linear>
+   <linear name="ATV-0CB0D91E82301836">
+    <pt x="1" y="-11.1111"/>
+   </linear>
+   <linear name="ATV-0CB0D91E82301838">
+    <pt x="1" y="-0.97"/>
+   </linear>
+   <linear name="ATV-0CB0D91E8230183A">
+    <pt x="1" y="-0.03728369198888889"/>
+   </linear>
+  </timedvalues>
+ </animation>
+</animations>

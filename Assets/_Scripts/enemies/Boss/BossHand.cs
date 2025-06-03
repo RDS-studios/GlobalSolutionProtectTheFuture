@@ -11,6 +11,13 @@ public class BossHand : MonoBehaviour
     [SerializeField] bool isVunerable = false;
     [SerializeField] int vida = 3; // Health of the hand
     private bool isAttacking = false;
+    [SerializeField] SpriteRenderer maoRenderer;
+    [SerializeField] Sprite maoSpriteAberta;
+    [SerializeField] Sprite maoSpriteFechada;
+
+    [SerializeField] GameObject fogoAberto;
+    [SerializeField] GameObject fogoFechado;
+
 
     void Start()
     {
@@ -76,7 +83,7 @@ public class BossHand : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, risePos, 5f * Time.deltaTime);
             yield return null; // <-- this is crucial!
         }
-
+        maoRenderer.sprite = maoSpriteFechada; // Change to closed hand sprite
         yield return new WaitForSeconds(0.2f);
 
         // Step 2: Slam down
@@ -86,10 +93,12 @@ public class BossHand : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, slamPos, 20f * Time.deltaTime);
             yield return null; // <-- this is also crucial!
         }
+        
 
-        // Step 3: Trigger attack animation
 
         yield return new WaitForSeconds(1f);
+
+        maoRenderer.sprite = maoSpriteAberta; // Change to open hand sprite
 
         // Step 4: Return to original position
         while (Vector3.Distance(transform.position, originalPos.position) > 0.05f)
@@ -124,7 +133,7 @@ public class BossHand : MonoBehaviour
         Vector3 middlePos = new Vector3(0, transform.position.y, transform.position.z); // Adjust X=0 to center X
         while (Vector3.Distance(transform.position, middlePos) > 0.05f)
         {
-            transform.position = Vector3.MoveTowards(transform.position, middlePos, 5f * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, middlePos, 20f * Time.deltaTime);
             yield return null;
         }
 
@@ -160,6 +169,9 @@ public class BossHand : MonoBehaviour
         yield return new WaitForSeconds(0.2f);
 
         // Step 2: Slam down
+        fogoAberto.SetActive(false); // Disable open fire   
+        fogoFechado.SetActive(true); // Enable closed fire
+        maoRenderer.sprite = maoSpriteFechada; // Change to closed hand sprite
         Vector3 slamPos = new Vector3(transform.position.x, playerTransform.position.y, transform.position.z); // or use playerTransform.position.y
         while (Vector3.Distance(transform.position, slamPos) > 0.05f)
         {
@@ -173,6 +185,9 @@ public class BossHand : MonoBehaviour
         yield return new WaitForSeconds(1f);
         isVunerable = false; // Reset vulnerability after the attack
         // Step 4: Return to original position
+        fogoFechado.SetActive(false); // Disable closed fire
+        fogoAberto.SetActive(true); // Enable open fire
+        maoRenderer.sprite = maoSpriteAberta; // Change to open hand sprite
         while (Vector3.Distance(transform.position, originalPos.position) > 0.05f)
         {
             transform.position = Vector3.MoveTowards(transform.position, originalPos.position, 5f * Time.deltaTime);
@@ -182,8 +197,19 @@ public class BossHand : MonoBehaviour
         isAttacking = false;
         StartCoroutine(ChangeFollowRoutine()); // revert to normal behavior
         animator.SetTrigger("attack");
+        if(vida <= 0)
+        {
+            animator.SetTrigger("Break");
+            Destroy(gameObject, 5f); // Destroy the hand after the break animation
+            bossHeadScript.fase++;  
+        }
     }
 
+    public void Burn()
+    {
+        fogoAberto.SetActive(true);
+        fogoFechado.SetActive(false);
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("WaterJet") && isVunerable)

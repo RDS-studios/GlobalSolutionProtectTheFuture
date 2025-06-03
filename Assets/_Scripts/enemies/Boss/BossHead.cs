@@ -20,6 +20,11 @@ public class BossHead : MonoBehaviour
     [SerializeField] int secondFaseMaxHits;
     [SerializeField] int secondFaseHits;
 
+    public bool hasBothHands = true;
+     
+
+
+
     public int fase = 0;
     public bool isAttacking = false;
 
@@ -80,6 +85,7 @@ public class BossHead : MonoBehaviour
         }
         else if (fase == 3)
         {
+            if (hasBothHands) { 
             int randomHand = Random.Range(0, 2);
 
             if (randomHand == 0)
@@ -89,6 +95,7 @@ public class BossHead : MonoBehaviour
             else
             {
                 yield return StartCoroutine(rightHandScript.ChangeFollowRoutine());
+            }
             }
         }
         yield return new WaitForSeconds(Random.Range(3.5f,5.6f));
@@ -108,6 +115,8 @@ public class BossHead : MonoBehaviour
         }
         if (fase == 3)
         {
+            leftHandScript.Burn();
+            rightHandScript.Burn(); 
             print("Entrando na fase 3");
         }
     }

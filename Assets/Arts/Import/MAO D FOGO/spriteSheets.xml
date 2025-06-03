@@ -1,0 +1,26 @@
+<spritesheets>
+ <spritesheet resolution="HD-mao" height="622" width="1727" name="sheet_Mao_2" filename="spriteSheets/sheet_Mao_2-HD-mao.png">
+  <sprite scaleX="0.033333335" angleDegrees="0" offsetX="-176.23351" scaleY="0.033333335" name="Fogo_1.png" offsetY="-26.1735" rect="1503,0,224,622"/>
+  <sprite scaleX="0.033333335" angleDegrees="0" offsetX="-138.5385" scaleY="0.033333335" name="mao_fechada_3.png" offsetY="-43.123501" rect="898,0,605,479"/>
+  <sprite scaleX="0.033333335" angleDegrees="0" offsetX="-108.4005" scaleY="0.033333335" name="mao_fechada_1.png" offsetY="6.4949999" rect="491,0,407,411"/>
+  <sprite scaleX="0.033333335" angleDegrees="0" offsetX="-209.3985" scaleY="0.033333335" name="Fogo_2.png" offsetY="179.53951" rect="0,0,491,217"/>
+ </spritesheet>
+ <spritesheet resolution="HD-Robo_de_TUGO" height="622" width="1727" name="sheet_Mao_2" filename="spriteSheets/sheet_Mao_2-HD-Robo_de_TUGO.png">
+  <sprite scaleX="0.033333335" angleDegrees="0" offsetX="-176.23351" scaleY="0.033333335" name="Fogo_1.png" offsetY="-26.1735" rect="1503,0,224,622"/>
+  <sprite scaleX="0.033333335" angleDegrees="0" offsetX="-138.5385" scaleY="0.033333335" name="mao_fechada_3.png" offsetY="-43.123501" rect="898,0,605,479"/>
+  <sprite scaleX="0.033333335" angleDegrees="0" offsetX="-108.4005" scaleY="0.033333335" name="mao_fechada_1.png" offsetY="6.4949999" rect="491,0,407,411"/>
+  <sprite scaleX="0.033333335" angleDegrees="0" offsetX="-209.3985" scaleY="0.033333335" name="Fogo_2.png" offsetY="179.53951" rect="0,0,491,217"/>
+ </spritesheet>
+ <spritesheet resolution="FullHD-mao" height="1247" width="1836" name="sheet_Mao_2" filename="spriteSheets/sheet_Mao_2-FullHD-mao.png">
+  <sprite scaleX="0.022222223" angleDegrees="0" offsetX="-264.35025" scaleY="0.022222223" name="Fogo_1.png" offsetY="-39.26025" rect="1506,320,330,927"/>
+  <sprite scaleX="0.022222223" angleDegrees="0" offsetX="-207.80775" scaleY="0.022222223" name="mao_fechada_3.png" offsetY="-64.685249" rect="604,320,902,712"/>
+  <sprite scaleX="0.022222223" angleDegrees="0" offsetX="-162.60075" scaleY="0.022222223" name="mao_fechada_1.png" offsetY="9.7425003" rect="0,320,604,611"/>
+  <sprite scaleX="0.022222223" angleDegrees="0" offsetX="-314.09775" scaleY="0.022222223" name="Fogo_2.png" offsetY="269.30927" rect="1105,0,731,320"/>
+ </spritesheet>
+ <spritesheet resolution="FullHD-Robo_de_TUGO" height="1247" width="1836" name="sheet_Mao_2" filename="spriteSheets/sheet_Mao_2-FullHD-Robo_de_TUGO.png">
+  <sprite scaleX="0.022222223" angleDegrees="0" offsetX="-264.35025" scaleY="0.022222223" name="Fogo_1.png" offsetY="-39.26025" rect="1506,320,330,927"/>
+  <sprite scaleX="0.022222223" angleDegrees="0" offsetX="-207.80775" scaleY="0.022222223" name="mao_fechada_3.png" offsetY="-64.685249" rect="604,320,902,712"/>
+  <sprite scaleX="0.022222223" angleDegrees="0" offsetX="-162.60075" scaleY="0.022222223" name="mao_fechada_1.png" offsetY="9.7425003" rect="0,320,604,611"/>
+  <sprite scaleX="0.022222223" angleDegrees="0" offsetX="-314.09775" scaleY="0.022222223" name="Fogo_2.png" offsetY="269.30927" rect="1105,0,731,320"/>
+ </spritesheet>
+</spritesheets>

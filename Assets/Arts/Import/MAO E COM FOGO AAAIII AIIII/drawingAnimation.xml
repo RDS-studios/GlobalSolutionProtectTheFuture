@@ -1,0 +1,12 @@
+<drawingAnimations version="1">
+ <drawingAnimation name="Default" spritesheet="sheet_Mao_1">
+  <drawing name="Fogo" node="Fogo" drwId="1">
+   <drw skinId="0" name="Fogo_1.png" frame="1" repeat="3"/>
+   <drw skinId="0" name="Fogo_2.png" frame="4" repeat="3"/>
+  </drawing>
+  <drawing name="mao_fechada" node="mao_fechada" drwId="2">
+   <drw skinId="0" name="mao_fechada_1.png" frame="1" repeat="3"/>
+   <drw skinId="0" name="mao_fechada_3.png" frame="4" repeat="3"/>
+  </drawing>
+ </drawingAnimation>
+</drawingAnimations>

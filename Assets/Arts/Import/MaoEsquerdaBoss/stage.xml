@@ -1,0 +1,7 @@
+<stages version="1">
+ <stage name="Default" unitWidth="42.666666666666664" unitHeight="24" resolutionWidth="1920" resolutionHeight="1080">
+  <skin skinId="0" name="none"/>
+  <node drwId="1" name="mao_fechada" groupId="0" skinId="0"/>
+  <play name="Default" skeleton="Corpo" animation="Default" drawingAnimation="Default" framerate="24" markerLength="60"/>
+ </stage>
+</stages>

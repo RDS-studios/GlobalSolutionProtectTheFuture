@@ -116,7 +116,7 @@ public class PlayerMovimentation : MonoBehaviour
     IEnumerator Hook()
     {
         hookAnimator.SetTrigger("enter");
-        yield return new WaitForSeconds(0.6f);
+        yield return new WaitForSeconds(0.2f);
         GameObject currentTarget = FindClosestHighest();
 
         if (currentTarget != null)

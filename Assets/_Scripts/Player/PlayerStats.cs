@@ -63,6 +63,15 @@ public class PlayerStats : MonoBehaviour
             collision.tag = "Untagged";
             moedasColetadas.Add(collision.gameObject);
         }
+
+        if (collision.gameObject.tag == "BossHand" && !immune)
+        {
+            TakeDmg();
+
+            Rigidbody2D rb = GetComponent<Rigidbody2D>();
+            float forceX = collision.transform.position.x > transform.position.x ? -3.7f : 3.7f;
+            rb.AddForce(new Vector2(forceX, 4f), ForceMode2D.Impulse);
+        }
     }
 
     void TakeDmg()
