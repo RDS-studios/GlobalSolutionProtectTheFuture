@@ -17,7 +17,7 @@ public class BossHand : MonoBehaviour
 
     [SerializeField] GameObject fogoAberto;
     [SerializeField] GameObject fogoFechado;
-
+    [SerializeField] bool isLeftHand;
 
     void Start()
     {
@@ -49,6 +49,7 @@ public class BossHand : MonoBehaviour
 
         if (isFollowingPlayer)
         {
+             
             animator.SetTrigger("enterAttack");
             bossHeadScript.isAttacking = true;
 
@@ -59,6 +60,25 @@ public class BossHand : MonoBehaviour
             else if (bossHeadScript.fase == 3)
             {
                 yield return StartCoroutine(AttackPlayer3());
+            }
+            else if (bossHeadScript.fase == 4)
+            {
+                int randomNum = Random.Range(0, 2);
+                if (randomNum == 0)
+                {
+                     
+                    yield return StartCoroutine(AttackPlayer3());
+                    yield return new WaitForSeconds(1f); // Wait for the attack to finish
+                    yield return StartCoroutine(SmashMiddleRoutine2());
+                }
+                else
+                {
+                    
+                    yield return StartCoroutine(SmashMiddleRoutine2());
+                    yield return new WaitForSeconds(1f); // Wait for the attack to finish
+                    yield return StartCoroutine(AttackPlayer3());
+                }
+
             }
         }
         else
@@ -118,7 +138,7 @@ public class BossHand : MonoBehaviour
         isAttacking = true;
         animator.SetTrigger("enterAttack"); // Trigger the attack animation
         bossHeadScript.isAttacking = true; // Set the boss head's attacking state   
-        print("Atacando2");
+        
         // Step 1: Slam downward
         Vector3 slamPos = new Vector3(transform.position.x, playerTransform.position.y, transform.position.z); // Adjust Y as needed
         while (Vector3.Distance(transform.position, slamPos) > 0.05f)
@@ -150,6 +170,54 @@ public class BossHand : MonoBehaviour
         bossHeadScript.isAttacking = false; // Reset the boss head's attacking state
     }
 
+    public IEnumerator SmashMiddleRoutine2()
+    {
+        isAttacking = true;
+        animator.SetTrigger("enterAttack"); // Trigger the attack animation
+        bossHeadScript.isAttacking = true; // Set the boss head's attacking state   
+
+        // Step 1: Slam downward
+        // Step 1: Slam downward
+        maoRenderer.sprite = maoSpriteFechada;
+        fogoAberto.SetActive(false);
+        fogoFechado.SetActive(true);
+
+        Vector3 slamPos = new Vector3(transform.position.x, playerTransform.position.y, transform.position.z);
+        while (Vector3.Distance(transform.position, slamPos) > 0.05f)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, slamPos, 20f * Time.deltaTime);
+            yield return null;
+        }
+
+        yield return new WaitForSeconds(0.5f);
+
+        // Step 2: Move to center
+        int xpos = isLeftHand ? 12 : -12;
+        Vector3 middlePos = new Vector3(xpos, transform.position.y, transform.position.z);
+        while (Vector3.Distance(transform.position, middlePos) > 0.05f)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, middlePos, 20f * Time.deltaTime);
+            yield return null;
+        }
+
+        yield return new WaitForSeconds(0.5f);
+
+        // Step 3: Return to origin
+        while (Vector3.Distance(transform.position, originalPos.position) > 0.05f)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, originalPos.position, 5f * Time.deltaTime);
+            yield return null;
+        }
+
+        // Reset visuals
+        maoRenderer.sprite = maoSpriteAberta;
+        fogoFechado.SetActive(false);
+        fogoAberto.SetActive(true);
+
+        animator.SetTrigger("attack");
+        isAttacking = false;
+        bossHeadScript.isAttacking = false;
+    }
 
 
     public IEnumerator AttackPlayer3()
@@ -159,6 +227,7 @@ public class BossHand : MonoBehaviour
         yield return new WaitForSeconds(4f); // Let enterAttack animation play
         isAttacking = true;
         // Step 1: Rise
+
         Vector3 risePos = transform.position + Vector3.up * 2f;
         while (Vector3.Distance(transform.position, risePos) > 0.05f)
         {
@@ -201,7 +270,17 @@ public class BossHand : MonoBehaviour
         {
             animator.SetTrigger("Break");
             Destroy(gameObject, 5f); // Destroy the hand after the break animation
-            bossHeadScript.fase++;  
+            bossHeadScript.fase++;
+            bossHeadScript.ChangeFase();  
+            bossHeadScript.hasBothHands = false; // Set the boss to not have both hands
+            if (isLeftHand)
+            {
+                bossHeadScript.isLeftHandActive = false; // Disable left hand
+            }
+            else
+            {
+                bossHeadScript.isRightHandActive = false; // Disable right hand
+            }
         }
     }
 

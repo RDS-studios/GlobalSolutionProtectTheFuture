@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using ToonBoom.Harmony;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerStats : MonoBehaviour
 {
@@ -18,7 +19,10 @@ public class PlayerStats : MonoBehaviour
 
     [SerializeField] HarmonyRenderer harmonyRendererNoJet;
     [SerializeField] HarmonyRenderer harmonyRendererWithJet;
+    [SerializeField] Animator animatorNoJet;
+    [SerializeField] Animator animatorWithJet;
 
+    [SerializeField] bool isFinalLevel = false; // Flag to check if it's the final level
     void Start()
     {
         canMove = true;
@@ -123,9 +127,12 @@ public class PlayerStats : MonoBehaviour
 
     IEnumerator Die()
     {
+        animatorNoJet.SetTrigger("Die");
+        animatorWithJet.SetTrigger("Die");
         canMove = false;
-        transform.position = new Vector3(gameSaver.transformCheckpoint.position.x, gameSaver.transformCheckpoint.position.y, transform.position.z);
+        
         yield return new WaitForSeconds(2.5f);
+        transform.position = new Vector3(gameSaver.transformCheckpoint.position.x, gameSaver.transformCheckpoint.position.y, transform.position.z);
         canMove = true;
 
         // Restore visuals
@@ -141,6 +148,11 @@ public class PlayerStats : MonoBehaviour
         for (int i = lives; i < hearts.Count; i++)
         {
             hearts[i].GetComponent<Animator>().SetTrigger("leave");
+        }
+
+        if (isFinalLevel)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // Reload the current scene if it's the final level
         }
     }
 }

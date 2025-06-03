@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sheet_Robo_de_TUGO-FullHD-Robo_de_TUGO_0: 6076498884202684901
+      sheet_Robo_de_TUGO-FullHD-Robo_de_TUGO_1: -3015598212835949460
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

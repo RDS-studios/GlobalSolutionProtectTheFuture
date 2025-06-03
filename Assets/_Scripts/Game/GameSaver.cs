@@ -10,7 +10,7 @@ public class GameSaver : MonoBehaviour
     
    
     public bool isPaused;
-
+    public static GameSaver Instance;
 
 
     [SerializeField] int currentSceneIndex;
@@ -56,7 +56,15 @@ void OnDisable()
     }
     private void Awake()
     {
-        
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject); // Keep across scenes
+        }
+        else
+        {
+            Destroy(gameObject); // Prevent duplication
+        }
     }
 
     
@@ -66,7 +74,7 @@ void OnDisable()
         currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
 
 
-        DontDestroyOnLoad(gameObject); // Garante que o GameSaver não seja destruído ao carregar uma nova cena
+       
 
         TogglePause();
 

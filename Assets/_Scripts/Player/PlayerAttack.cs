@@ -46,7 +46,11 @@ public class PlayerAttack : MonoBehaviour
     
     }
 
-
+    public void Recharge()
+    {
+        ammo = 10; // Reset ammo count to 10
+        playerStats.hasWaterJet = true; // Enable water jet ability
+    }
     IEnumerator Attack()
     {
         if (ammo > 0)
