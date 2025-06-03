@@ -4,6 +4,10 @@ using UnityEngine;
 public class BossHand : MonoBehaviour
 {
     [SerializeField] Animator animator;
+
+    [SerializeField] Animator animatorPlataforma;
+    [SerializeField] Animator animatorPlataforma2;
+
     [SerializeField] bool isFollowingPlayer = false;
     [SerializeField] Transform originalPos;
     [SerializeField] Transform playerTransform;
@@ -19,6 +23,9 @@ public class BossHand : MonoBehaviour
     [SerializeField] GameObject fogoFechado;
     [SerializeField] bool isLeftHand;
 
+    [SerializeField] bool animated = false;
+
+    
     void Start()
     {
         playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
@@ -42,6 +49,7 @@ public class BossHand : MonoBehaviour
             transform.rotation = Quaternion.RotateTowards(transform.rotation, originalPos.rotation, 0.1f);
         }
     }
+
 
     public IEnumerator ChangeFollowRoutine()
     {
@@ -89,6 +97,16 @@ public class BossHand : MonoBehaviour
         }
     }
 
+
+    void EnterPlatform()
+    {
+        if (!animated)
+        {
+            animatorPlataforma.SetTrigger("enter");
+            animated = true; // Prevent re-triggering
+        }
+        
+    }
 
     public IEnumerator AttackPlayer1()
     {
@@ -188,7 +206,7 @@ public class BossHand : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, slamPos, 20f * Time.deltaTime);
             yield return null;
         }
-
+        EnterPlatform();
         yield return new WaitForSeconds(0.5f);
 
         // Step 2: Move to center
@@ -247,6 +265,10 @@ public class BossHand : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, slamPos, 20f * Time.deltaTime);
             yield return null; // <-- this is also crucial!
         }
+        if(bossHeadScript.fase == 4)
+        {
+            animatorPlataforma.SetTrigger("enter");
+        }
         isVunerable = true; // Set the hand to be vulnerable after the slam
         yield return new WaitForSeconds(1.5f);  
         
@@ -269,7 +291,13 @@ public class BossHand : MonoBehaviour
         if(vida <= 0)
         {
             animator.SetTrigger("Break");
-            Destroy(gameObject, 5f); // Destroy the hand after the break animation
+            if(bossHeadScript.hasBothHands == false)
+            {
+                animatorPlataforma2.SetTrigger("enter");
+            }
+            
+                 
+                Destroy(gameObject, 5f); // Destroy the hand after the break animation
             bossHeadScript.fase++;
             bossHeadScript.ChangeFase();  
             bossHeadScript.hasBothHands = false; // Set the boss to not have both hands

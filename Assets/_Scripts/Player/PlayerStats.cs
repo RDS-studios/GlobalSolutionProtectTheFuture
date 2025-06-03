@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using ToonBoom.Harmony;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -33,6 +34,11 @@ public class PlayerStats : MonoBehaviour
         hearts.Add(GameObject.FindGameObjectWithTag("Heart2"));
         hearts.Add(GameObject.FindGameObjectWithTag("Heart3"));
     }
+
+    
+
+
+
 
     void Update()
     {
@@ -76,6 +82,11 @@ public class PlayerStats : MonoBehaviour
             float forceX = collision.transform.position.x > transform.position.x ? -3.7f : 3.7f;
             rb.AddForce(new Vector2(forceX, 4f), ForceMode2D.Impulse);
         }
+
+        if(collision.gameObject.tag == "water")
+        {
+
+        }
     }
 
     void TakeDmg()
@@ -102,7 +113,14 @@ public class PlayerStats : MonoBehaviour
         canMove = false;
         StartCoroutine(MoveCooldown());
     }
+    IEnumerator BackToCheckpoint()
+    {
+        yield return new WaitForSeconds(2.5f);
+        transform.position = new Vector3(gameSaver.transformCheckpoint.position.x, gameSaver.transformCheckpoint.position.y, transform.position.z);
+        canMove = true;
+    }   
 
+   
     IEnumerator Iframes()
     {
         immune = true;
@@ -155,4 +173,9 @@ public class PlayerStats : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // Reload the current scene if it's the final level
         }
     }
+
+
+     
+
+     
 }

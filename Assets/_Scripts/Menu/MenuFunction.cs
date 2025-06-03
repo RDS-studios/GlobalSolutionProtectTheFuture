@@ -81,8 +81,9 @@ public class MenuFunction : MonoBehaviour
 
     public void PlayGame()
     {
+        SceneManager.LoadScene(2); // Load the game scene
         sfxSource.Play(); // Optional: play feedback sound
-        SceneManager.LoadScene(6); // Load the game scene
+        
     }
 
     public void BackToMenu()

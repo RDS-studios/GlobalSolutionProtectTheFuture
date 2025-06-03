@@ -53,6 +53,28 @@ void OnDisable()
         }
 
         Debug.Log("Scene loaded: " + scene.name + " (Index: " + currentSceneIndex + ")");
+        if(currentSceneIndex == 4)
+        {
+            PlayerPrefs.SetInt("fase4Unlocked", 1); // Unlock level 4
+            Debug.Log("Fase 4 desbloqueada.");
+        }
+        if (currentSceneIndex == 5)
+        {
+            PlayerPrefs.SetInt("fase5Unlocked", 1); // Unlock level 4
+            Debug.Log("Fase 5 desbloqueada.");
+        }
+
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        player.GetComponent<PlayerStats>().coins = PlayerPrefs.GetInt("PlayerCoins", 0);
+        player.GetComponent<PlayerStats>().lives = PlayerPrefs.GetInt("PlayerLives", 3); // Default to 3 lives if not set
+        player.GetComponent<PlayerAttack>().ammo = PlayerPrefs.GetInt("PlayerAmmo", 0); // Default to 0 ammo if not set
+        player.GetComponent<PlayerStats>().hasWaterJet = PlayerPrefs.GetInt("HasWaterJet", 0) == 1; // Default to false if not set
+
+
+        //PlayerPrefs.SetInt("PlayerLives", hpJogador);
+        //PlayerPrefs.SetInt("PlayerCoins", moedasColetadas);
+        //PlayerPrefs.SetInt("PlayerAmmo", ammoJogador);
+        //PlayerPrefs.SetInt("HasWaterJet", playerStats.hasWaterJet ? 1 : 0); // Save water jet status
     }
     private void Awake()
     {

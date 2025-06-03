@@ -21,6 +21,10 @@ public class BossHead : MonoBehaviour
     [SerializeField] int secondFaseHits;
     [SerializeField] Animator waterAnimator;
 
+
+
+    [SerializeField] GameObject GlassSprite;
+
     public bool hasBothHands = true;
     public bool isLeftHandActive = true;
     public bool isRightHandActive = true;
@@ -165,7 +169,8 @@ public class BossHead : MonoBehaviour
            
             
                 bossHP--;
-                print("Boss HP: " + bossHP);
+            GlassSprite.SetActive(false);
+            print("Boss HP: " + bossHP);
                
                 if (bossHP <= 0)
                 {

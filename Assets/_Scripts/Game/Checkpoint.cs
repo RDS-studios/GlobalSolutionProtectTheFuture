@@ -58,7 +58,7 @@ public class Checkpoint : MonoBehaviour
         PlayerPrefs.SetInt("PlayerAmmo", ammoJogador);
         PlayerPrefs.SetInt("HasWaterJet", playerStats.hasWaterJet ? 1 : 0); // Save water jet status
 
-   
+        PlayerPrefs.Save();
 
         Debug.Log("Checkpoint saved: Lives: " + hpJogador + ", Coins: " + moedasColetadas + ", Ammo: " + playerAttack.ammo);
     }
