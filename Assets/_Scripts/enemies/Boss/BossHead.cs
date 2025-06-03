@@ -21,7 +21,9 @@ public class BossHead : MonoBehaviour
     [SerializeField] int secondFaseHits;
 
     public bool hasBothHands = true;
-     
+    public bool isLeftHandActive = true; 
+    public bool isRightHandActive = true;
+
 
 
 

@@ -1,0 +1,7 @@
+<drawingAnimations version="1">
+ <drawingAnimation name="Default" spritesheet="sheet_Robo_de_TUGO">
+  <drawing name="Corpo-G_Corpo" node="Corpo-G_Corpo" drwId="1">
+   <drw skinId="0" name="Corpo_1.png" frame="1" repeat="3"/>
+  </drawing>
+ </drawingAnimation>
+</drawingAnimations>

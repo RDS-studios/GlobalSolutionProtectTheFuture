@@ -1,0 +1,14 @@
+<skeletons version="1" tgspath="Robo_de_TUGO.xstage">
+ <skeleton name="Master-P">
+  <nodes>
+   <peg id="0" name="Master-P"/>
+   <read id="1" name="Corpo-G_Corpo" visible="true"/>
+   <read id="2" name="Corpo-G_Vidro" visible="true"/>
+  </nodes>
+  <links>
+   <link in="Top" out="0" port="0"/>
+   <link in="0" out="1" port="0"/>
+   <link in="Top" out="2" port="0"/>
+  </links>
+ </skeleton>
+</skeletons>

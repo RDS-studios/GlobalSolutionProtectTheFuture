@@ -1,0 +1,8 @@
+<spritesheets>
+ <spritesheet name="sheet_Robo_de_TUGO" width="452" resolution="HD-Robo_de_TUGO" height="338" filename="spriteSheets/sheet_Robo_de_TUGO-HD-Robo_de_TUGO.png">
+  <sprite name="Corpo_1.png" scaleX="0.033333335" rect="0,0,452,338" offsetX="5.2470002" scaleY="0.033333335" offsetY="-202.28999" angleDegrees="0"/>
+ </spritesheet>
+ <spritesheet name="sheet_Robo_de_TUGO" width="672" resolution="FullHD-Robo_de_TUGO" height="501" filename="spriteSheets/sheet_Robo_de_TUGO-FullHD-Robo_de_TUGO.png">
+  <sprite name="Corpo_1.png" scaleX="0.022222223" rect="0,0,672,501" offsetX="7.8705001" scaleY="0.022222223" offsetY="-303.435" angleDegrees="0"/>
+ </spritesheet>
+</spritesheets>
