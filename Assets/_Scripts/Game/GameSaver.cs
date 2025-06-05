@@ -8,6 +8,9 @@ public class GameSaver : MonoBehaviour
     public Transform transformCheckpoint;
     [SerializeField] PlayerInput action;
 
+    [SerializeField] Animator animatorCortina;
+
+
     public bool isPaused;
     public static GameSaver Instance;
 
@@ -60,6 +63,13 @@ public class GameSaver : MonoBehaviour
          
 
         LoadState(); //   Carrega os dados do jogador no início
+    }
+
+
+
+    public void CurtinaIn()
+    {
+        animatorCortina.SetTrigger("courtain");
     }
 
     void Update()

@@ -49,7 +49,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -247,7 +247,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Engrenagens juntas_0: 4095685171407233877
+      Engrenagens juntas_1: 3582637361506359455
+      Engrenagens juntas_2: 1032491244014817144
+      Engrenagens juntas_3: 3382443022397672588
+      Engrenagens juntas_4: 5374438388242087766
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
