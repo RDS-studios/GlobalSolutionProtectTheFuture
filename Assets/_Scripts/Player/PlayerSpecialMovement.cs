@@ -21,7 +21,7 @@ public class PlayerSpecialMovement : MonoBehaviour
     [SerializeField] float maxY = 5f;
 
     private Vector2 moveInput;
-    private int facingDirection = 1;
+   // private int facingDirection = 1;
 
     void Start()
     {
