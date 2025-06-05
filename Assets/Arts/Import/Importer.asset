@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 819987e1edc943b4fa1b1fbb06080c5b, type: 3}
   m_Name: Importer
   m_EditorClassIdentifier: 
-  HarmonyXMLProjectPath: Assets/Arts/Import/ROBOM COM VIDRO/ROBO COM VIDRO
-  OutputPath: Assets/Arts/boss/BossHead/bossHead.asset
+  HarmonyXMLProjectPath: Assets/Arts/Import/Slime de fogo
+  OutputPath: Assets/Arts/Enemies/inimigoSlimeFogo/slimeFogo.asset
   GeneratePrefab: 1
   ExistingPrefab: {fileID: 0}
   AnimationSettings:

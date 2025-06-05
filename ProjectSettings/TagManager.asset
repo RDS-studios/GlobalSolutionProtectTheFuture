@@ -17,6 +17,12 @@ TagManager:
   - Heart3
   - AmmoCounter
   - BossHand
+  - txtCoins
+  - npc1
+  - npc2
+  - npc3
+  - npc4
+  - faseEnder
   layers:
   - Default
   - TransparentFX

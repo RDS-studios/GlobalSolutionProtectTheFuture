@@ -1,0 +1,38 @@
+<spritesheets>
+ <spritesheet width="1647" name="sheet_Inimigo Fogo" resolution="HD-Inimigo" height="522" filename="spriteSheets/sheet_Inimigo Fogo-HD-Inimigo.png">
+  <sprite angleDegrees="0" name="Fogo_1.png" scaleX="0.033333335" offsetY="31.9515" offsetX="0.30450001" scaleY="0.033333335" rect="971,0,676,522"/>
+  <sprite angleDegrees="0" name="Corpo_1.png" scaleX="0.033333335" offsetY="-89.740196" offsetX="7.1339998" scaleY="0.033333335" rect="374,0,597,487"/>
+  <sprite angleDegrees="0" name="Pauzitos_1.png" scaleX="0.033333335" offsetY="-422.91901" offsetX="-20.953501" scaleY="0.033333335" rect="295,0,79,395"/>
+  <sprite angleDegrees="0" name="Olho_d_1.png" scaleX="0.033333335" offsetY="-86.829002" offsetX="-98.845497" scaleY="0.033333335" rect="203,0,92,114"/>
+  <sprite angleDegrees="0" name="Olho_e_1.png" scaleX="0.033333335" offsetY="-90.162003" offsetX="109.6875" scaleY="0.033333335" rect="111,0,92,114"/>
+  <sprite angleDegrees="0" name="SombraCelha_D_1.png" scaleX="0.033333335" offsetY="-20.493" offsetX="117.6435" scaleY="0.033333335" rect="57,0,54,47"/>
+  <sprite angleDegrees="0" name="SombraCelha_E_1.png" scaleX="0.033333335" offsetY="-15.774" offsetX="-108.966" scaleY="0.033333335" rect="0,0,57,46"/>
+ </spritesheet>
+ <spritesheet width="1647" name="sheet_Inimigo Fogo" resolution="HD-Teste_1" height="522" filename="spriteSheets/sheet_Inimigo Fogo-HD-Teste_1.png">
+  <sprite angleDegrees="0" name="Fogo_1.png" scaleX="0.033333335" offsetY="31.9515" offsetX="0.30450001" scaleY="0.033333335" rect="971,0,676,522"/>
+  <sprite angleDegrees="0" name="Corpo_1.png" scaleX="0.033333335" offsetY="-89.740196" offsetX="7.1339998" scaleY="0.033333335" rect="374,0,597,487"/>
+  <sprite angleDegrees="0" name="Pauzitos_1.png" scaleX="0.033333335" offsetY="-422.91901" offsetX="-20.953501" scaleY="0.033333335" rect="295,0,79,395"/>
+  <sprite angleDegrees="0" name="Olho_d_1.png" scaleX="0.033333335" offsetY="-86.829002" offsetX="-98.845497" scaleY="0.033333335" rect="203,0,92,114"/>
+  <sprite angleDegrees="0" name="Olho_e_1.png" scaleX="0.033333335" offsetY="-90.162003" offsetX="109.6875" scaleY="0.033333335" rect="111,0,92,114"/>
+  <sprite angleDegrees="0" name="SombraCelha_D_1.png" scaleX="0.033333335" offsetY="-20.493" offsetX="117.6435" scaleY="0.033333335" rect="57,0,54,47"/>
+  <sprite angleDegrees="0" name="SombraCelha_E_1.png" scaleX="0.033333335" offsetY="-15.774" offsetX="-108.966" scaleY="0.033333335" rect="0,0,57,46"/>
+ </spritesheet>
+ <spritesheet width="2012" name="sheet_Inimigo Fogo" resolution="FullHD-Inimigo" height="943" filename="spriteSheets/sheet_Inimigo Fogo-FullHD-Inimigo.png">
+  <sprite angleDegrees="0" name="Fogo_1.png" scaleX="0.022222223" offsetY="47.92725" offsetX="0.45675001" scaleY="0.022222223" rect="1003,165,1009,778"/>
+  <sprite angleDegrees="0" name="Corpo_1.png" scaleX="0.022222223" offsetY="-134.61031" offsetX="10.701" scaleY="0.022222223" rect="113,165,890,725"/>
+  <sprite angleDegrees="0" name="Pauzitos_1.png" scaleX="0.022222223" offsetY="-634.37848" offsetX="-31.43025" scaleY="0.022222223" rect="0,165,113,587"/>
+  <sprite angleDegrees="0" name="Olho_d_1.png" scaleX="0.022222223" offsetY="-130.2435" offsetX="-148.26825" scaleY="0.022222223" rect="1880,0,132,165"/>
+  <sprite angleDegrees="0" name="Olho_e_1.png" scaleX="0.022222223" offsetY="-135.243" offsetX="164.53125" scaleY="0.022222223" rect="1748,0,132,165"/>
+  <sprite angleDegrees="0" name="SombraCelha_D_1.png" scaleX="0.022222223" offsetY="-30.7395" offsetX="176.46526" scaleY="0.022222223" rect="1673,0,75,64"/>
+  <sprite angleDegrees="0" name="SombraCelha_E_1.png" scaleX="0.022222223" offsetY="-23.660999" offsetX="-163.44901" scaleY="0.022222223" rect="1593,0,80,63"/>
+ </spritesheet>
+ <spritesheet width="2012" name="sheet_Inimigo Fogo" resolution="FullHD-Teste_1" height="943" filename="spriteSheets/sheet_Inimigo Fogo-FullHD-Teste_1.png">
+  <sprite angleDegrees="0" name="Fogo_1.png" scaleX="0.022222223" offsetY="47.92725" offsetX="0.45675001" scaleY="0.022222223" rect="1003,165,1009,778"/>
+  <sprite angleDegrees="0" name="Corpo_1.png" scaleX="0.022222223" offsetY="-134.61031" offsetX="10.701" scaleY="0.022222223" rect="113,165,890,725"/>
+  <sprite angleDegrees="0" name="Pauzitos_1.png" scaleX="0.022222223" offsetY="-634.37848" offsetX="-31.43025" scaleY="0.022222223" rect="0,165,113,587"/>
+  <sprite angleDegrees="0" name="Olho_d_1.png" scaleX="0.022222223" offsetY="-130.2435" offsetX="-148.26825" scaleY="0.022222223" rect="1880,0,132,165"/>
+  <sprite angleDegrees="0" name="Olho_e_1.png" scaleX="0.022222223" offsetY="-135.243" offsetX="164.53125" scaleY="0.022222223" rect="1748,0,132,165"/>
+  <sprite angleDegrees="0" name="SombraCelha_D_1.png" scaleX="0.022222223" offsetY="-30.7395" offsetX="176.46526" scaleY="0.022222223" rect="1673,0,75,64"/>
+  <sprite angleDegrees="0" name="SombraCelha_E_1.png" scaleX="0.022222223" offsetY="-23.660999" offsetX="-163.44901" scaleY="0.022222223" rect="1593,0,80,63"/>
+ </spritesheet>
+</spritesheets>

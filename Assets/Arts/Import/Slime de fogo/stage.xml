@@ -1,0 +1,13 @@
+<stages version="1">
+ <stage name="Default" unitWidth="42.666666666666664" unitHeight="24" resolutionWidth="1920" resolutionHeight="1080">
+  <skin skinId="0" name="none"/>
+  <node drwId="1" name="Pauzitos-G_Pauzitos" groupId="0" skinId="0"/>
+  <node drwId="2" name="Pauzitos-G_Fogo" groupId="0" skinId="0"/>
+  <node drwId="3" name="Pauzitos-G_Corpo" groupId="0" skinId="0"/>
+  <node drwId="4" name="Pauzitos-G_Olho_e" groupId="0" skinId="0"/>
+  <node drwId="5" name="Pauzitos-G_Olho_d" groupId="0" skinId="0"/>
+  <node drwId="6" name="Pauzitos-G_SombraCelha_E" groupId="0" skinId="0"/>
+  <node drwId="7" name="Pauzitos-G_SombraCelha_D" groupId="0" skinId="0"/>
+  <play name="Default" skeleton="Master-P" animation="Default" drawingAnimation="Default" framerate="24" markerLength="11"/>
+ </stage>
+</stages>

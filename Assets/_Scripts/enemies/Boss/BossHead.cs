@@ -1,3 +1,4 @@
+using SmallHedge.SoundManager;
 using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -147,7 +148,8 @@ public class BossHead : MonoBehaviour
         }
         if (fase == 3)
         {
-            waterAnimator.SetTrigger("enterScene"); 
+            waterAnimator.SetTrigger("enterScene");
+            SoundManager.PlaySound(SoundType.tichoFase3Frase);
             leftHandScript.Burn();
             rightHandScript.Burn();
             print("Entrando na fase 3");

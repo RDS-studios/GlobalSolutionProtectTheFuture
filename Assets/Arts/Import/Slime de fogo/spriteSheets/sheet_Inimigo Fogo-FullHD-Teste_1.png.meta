@@ -1,0 +1,312 @@
+fileFormatVersion: 2
+guid: b2e872dc0aadfa342a9852a1b047ef41
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8855217199582711860
+    second: sheet_Inimigo Fogo-FullHD-Teste_1_0
+  - first:
+      213: 551199396230280872
+    second: sheet_Inimigo Fogo-FullHD-Teste_1_1
+  - first:
+      213: -6513593797080528413
+    second: sheet_Inimigo Fogo-FullHD-Teste_1_2
+  - first:
+      213: -1105818475368676837
+    second: sheet_Inimigo Fogo-FullHD-Teste_1_3
+  - first:
+      213: -2638076468774441403
+    second: sheet_Inimigo Fogo-FullHD-Teste_1_4
+  - first:
+      213: -6405423140839578885
+    second: sheet_Inimigo Fogo-FullHD-Teste_1_5
+  - first:
+      213: 1857682110524495493
+    second: sheet_Inimigo Fogo-FullHD-Teste_1_6
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sheet_Inimigo Fogo-FullHD-Teste_1_0
+      rect:
+        serializedVersion: 2
+        x: 1597
+        y: 884
+        width: 72
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccf61f9bfd2fb1580800000000000000
+      internalID: -8855217199582711860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Inimigo Fogo-FullHD-Teste_1_1
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 883
+        width: 67
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a637b43ee046a700800000000000000
+      internalID: 551199396230280872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Inimigo Fogo-FullHD-Teste_1_2
+      rect:
+        serializedVersion: 2
+        x: 1755
+        y: 785
+        width: 119
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e9c3d9b3f01b95a0800000000000000
+      internalID: -6513593797080528413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Inimigo Fogo-FullHD-Teste_1_3
+      rect:
+        serializedVersion: 2
+        x: 1886
+        y: 785
+        width: 119
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b12069d94f757a0f0800000000000000
+      internalID: -1105818475368676837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Inimigo Fogo-FullHD-Teste_1_4
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 195
+        width: 106
+        height: 579
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54ee164cd6ba36bd0800000000000000
+      internalID: -2638076468774441403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Inimigo Fogo-FullHD-Teste_1_5
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 58
+        width: 865
+        height: 716
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf2a03e379d5b17a0800000000000000
+      internalID: -6405423140839578885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Inimigo Fogo-FullHD-Teste_1_6
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 5
+        width: 961
+        height: 761
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 586196f7900d7c910800000000000000
+      internalID: 1857682110524495493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      sheet_Inimigo Fogo-FullHD-Teste_1_0: -8855217199582711860
+      sheet_Inimigo Fogo-FullHD-Teste_1_1: 551199396230280872
+      sheet_Inimigo Fogo-FullHD-Teste_1_2: -6513593797080528413
+      sheet_Inimigo Fogo-FullHD-Teste_1_3: -1105818475368676837
+      sheet_Inimigo Fogo-FullHD-Teste_1_4: -2638076468774441403
+      sheet_Inimigo Fogo-FullHD-Teste_1_5: -6405423140839578885
+      sheet_Inimigo Fogo-FullHD-Teste_1_6: 1857682110524495493
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

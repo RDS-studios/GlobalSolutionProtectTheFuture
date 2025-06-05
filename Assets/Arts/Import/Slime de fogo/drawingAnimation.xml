@@ -1,0 +1,25 @@
+<drawingAnimations version="1">
+ <drawingAnimation name="Default" spritesheet="sheet_Inimigo Fogo">
+  <drawing name="Pauzitos-G_Pauzitos" node="Pauzitos-G_Pauzitos" drwId="1">
+   <drw skinId="0" name="Pauzitos_1.png" frame="1" repeat="11"/>
+  </drawing>
+  <drawing name="Pauzitos-G_Fogo" node="Pauzitos-G_Fogo" drwId="2">
+   <drw skinId="0" name="Fogo_1.png" frame="1" repeat="11"/>
+  </drawing>
+  <drawing name="Pauzitos-G_Corpo" node="Pauzitos-G_Corpo" drwId="3">
+   <drw skinId="0" name="Corpo_1.png" frame="1" repeat="11"/>
+  </drawing>
+  <drawing name="Pauzitos-G_Olho_e" node="Pauzitos-G_Olho_e" drwId="4">
+   <drw skinId="0" name="Olho_e_1.png" frame="1" repeat="11"/>
+  </drawing>
+  <drawing name="Pauzitos-G_Olho_d" node="Pauzitos-G_Olho_d" drwId="5">
+   <drw skinId="0" name="Olho_d_1.png" frame="1" repeat="11"/>
+  </drawing>
+  <drawing name="Pauzitos-G_SombraCelha_E" node="Pauzitos-G_SombraCelha_E" drwId="6">
+   <drw skinId="0" name="SombraCelha_E_1.png" frame="1" repeat="11"/>
+  </drawing>
+  <drawing name="Pauzitos-G_SombraCelha_D" node="Pauzitos-G_SombraCelha_D" drwId="7">
+   <drw skinId="0" name="SombraCelha_D_1.png" frame="1" repeat="11"/>
+  </drawing>
+ </drawingAnimation>
+</drawingAnimations>

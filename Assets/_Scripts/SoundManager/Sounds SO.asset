@@ -33,3 +33,33 @@ MonoBehaviour:
     volume: 1
     mixer: {fileID: 0}
     sounds: []
+  - name: NarradorFase1Frase1
+    volume: 1
+    mixer: {fileID: 0}
+    sounds:
+    - {fileID: 8300000, guid: d8ce1a2b93a95f24da32f4af43ac9715, type: 3}
+  - name: NarradorFase1Frase2
+    volume: 1
+    mixer: {fileID: 0}
+    sounds:
+    - {fileID: 8300000, guid: f26500a6c53a4e042827621f5441f66d, type: 3}
+  - name: NarradorFase1Frase3
+    volume: 1
+    mixer: {fileID: 0}
+    sounds:
+    - {fileID: 8300000, guid: 71d6c024ca020d34dbbe3d2e758c01d4, type: 3}
+  - name: NarradorFase1Frase4
+    volume: 1
+    mixer: {fileID: 0}
+    sounds:
+    - {fileID: 8300000, guid: 56e89c67338f6c94b821f7ad6d067aee, type: 3}
+  - name: TichoFase1frase
+    volume: 1
+    mixer: {fileID: 0}
+    sounds:
+    - {fileID: 8300000, guid: 72508c996e9b1134dbc968120fd1d68c, type: 3}
+  - name: tichoFase3Frase
+    volume: 1
+    mixer: {fileID: 0}
+    sounds:
+    - {fileID: 8300000, guid: dbb484029e5c656438ce09b747ac9aa0, type: 3}

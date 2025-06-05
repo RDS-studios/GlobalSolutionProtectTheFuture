@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using ToonBoom.Harmony;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -23,6 +24,9 @@ public class PlayerStats : MonoBehaviour
     [SerializeField] Animator animatorNoJet;
     [SerializeField] Animator animatorWithJet;
 
+
+    [SerializeField] TMP_Text coinsText; // Text to display the number of coins collected
+
     [SerializeField] bool isFinalLevel = false; // Flag to check if it's the final level
     void Start()
     {
@@ -33,6 +37,9 @@ public class PlayerStats : MonoBehaviour
         hearts.Add(GameObject.FindGameObjectWithTag("Heart1"));
         hearts.Add(GameObject.FindGameObjectWithTag("Heart2"));
         hearts.Add(GameObject.FindGameObjectWithTag("Heart3"));
+
+        coinsText = GameObject.FindGameObjectWithTag("txtCoins").GetComponent<TMP_Text>();
+        coinsText.text = coins.ToString();
     }
 
     
@@ -42,10 +49,12 @@ public class PlayerStats : MonoBehaviour
 
     void Update()
     {
-        if (coins >= 50)
+        coinsText.text = coins.ToString();
+        if (coins >= 10)
         {
             Heal();
             coins = 0;
+            
         }
 
         harmonyRendererNoJet.enabled = !hasWaterJet;
@@ -72,6 +81,7 @@ public class PlayerStats : MonoBehaviour
             collision.GetComponent<SpriteRenderer>().enabled = false;
             collision.tag = "Untagged";
             moedasColetadas.Add(collision.gameObject);
+            coinsText.text = coins.ToString();
         }
 
         if (collision.gameObject.tag == "BossHand" && !immune)
@@ -85,7 +95,7 @@ public class PlayerStats : MonoBehaviour
 
         if(collision.gameObject.tag == "water")
         {
-
+            StartCoroutine(BackToCheckpoint()); 
         }
     }
 
@@ -113,10 +123,18 @@ public class PlayerStats : MonoBehaviour
         canMove = false;
         StartCoroutine(MoveCooldown());
     }
-    IEnumerator BackToCheckpoint()
+
+    public void BackToCheckPoint()
     {
-        yield return new WaitForSeconds(2.5f);
+        StartCoroutine(BackToCheckpoint());
+    }
+
+      IEnumerator BackToCheckpoint()
+    {
+        TakeDmg();  
+        canMove = false;
         transform.position = new Vector3(gameSaver.transformCheckpoint.position.x, gameSaver.transformCheckpoint.position.y, transform.position.z);
+        yield return new WaitForSeconds(2.5f);
         canMove = true;
     }   
 
@@ -150,8 +168,19 @@ public class PlayerStats : MonoBehaviour
         canMove = false;
         
         yield return new WaitForSeconds(2.5f);
-        transform.position = new Vector3(gameSaver.transformCheckpoint.position.x, gameSaver.transformCheckpoint.position.y, transform.position.z);
+        animatorNoJet.SetTrigger("revive");
+        animatorWithJet.SetTrigger("revive");
+        if (gameSaver.transformCheckpoint == null)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // Reload the current scene if no checkpoint is set
+        }
+        else
+        { 
+          transform.position = new Vector3(gameSaver.transformCheckpoint.position.x, gameSaver.transformCheckpoint.position.y, transform.position.z);
+        }
+            
         canMove = true;
+
 
         // Restore visuals
         foreach (GameObject heart in hearts)

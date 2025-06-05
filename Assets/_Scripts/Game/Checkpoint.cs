@@ -14,6 +14,9 @@ public class Checkpoint : MonoBehaviour
     [SerializeField] Transform posCheckpoint;
 
     [SerializeField]private bool saved = false;
+
+
+    [SerializeField] Animator animator; // Animator for checkpoint interaction    
     void Start()
     {
         gameSaver = GameObject.FindGameObjectWithTag("GameSaver").GetComponent<GameSaver>();
@@ -35,6 +38,7 @@ public class Checkpoint : MonoBehaviour
                 playerAttack = collision.GetComponent<PlayerAttack>();
                 playerStats = collision.GetComponent<PlayerStats>();
                 saved = true;
+                animator.SetTrigger("save"); // Trigger checkpoint animation
                 SaveStatus();
 
              

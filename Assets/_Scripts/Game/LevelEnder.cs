@@ -1,3 +1,4 @@
+using SmallHedge.SoundManager;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -6,7 +7,7 @@ public class LevelEnder : MonoBehaviour
    [SerializeField] PlayerStats playerStats; // Reference to PlayerStats script
     [SerializeField] PlayerAttack playerAttack;
     [SerializeField] int fase;
-    [SerializeField] bool canEndLevel = false; // Flag to check if the level can end
+    public bool canEndLevel = false; // Flag to check if the level can end
 
     private void Start()
     {
@@ -38,6 +39,9 @@ public class LevelEnder : MonoBehaviour
             // SceneManager.LoadScene("NextLevel"); // Uncomment this line to load the next level
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); // Load the next scene in the build order
 
+        }else if(collision.CompareTag("Player") && !canEndLevel && SceneManager.GetActiveScene().buildIndex == 3)
+        {
+            SoundManager.PlaySound(SoundType.TichoFase1frase);
         }
     }
 }

@@ -9,21 +9,30 @@ public class EnemyScript : MonoBehaviour
     [SerializeField] Rigidbody2D rb;
     [SerializeField] int enemyHP = 1; // Health points of the enemy
     [SerializeField] float flipSpeed = 5f; // How fast the flip happens
+    [SerializeField] Animator animator;
 
-    [SerializeField] Animator animator;  
+    [SerializeField] bool segredo = false; // porra do segredo, vai tomar no seu cu diego
+
+    [Header("Falling Settings")]
+    [SerializeField] bool falling = false;
+    [SerializeField] float fallingSpeed = -1f; // constant descent speed
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         StartCoroutine(Move());
-    
     }
 
     void Update()
     {
-        if (canMove)
+        if (canMove && rb.bodyType != RigidbodyType2D.Static)
         {
-            rb.linearVelocity = new Vector2(direction * speed, rb.linearVelocity.y);
+            // If falling is enabled, apply constant downward speed
+            float verticalVelocity = falling ? fallingSpeed : rb.linearVelocity.y;
+
+            rb.linearVelocity = new Vector2(direction * speed, verticalVelocity);
+
+             
         }
 
         // Smooth scale flip based on direction
@@ -55,29 +64,34 @@ public class EnemyScript : MonoBehaviour
         direction *= -1;
     }
 
-
-
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("WaterJet"))
         {
-
-
             enemyHP--;
             if (enemyHP <= 0)
             {
-               Die(); // Destroy the enemy if HP is 0 or less
+                Die(); // Destroy the enemy if HP is 0 or less
             }
-
         }
     }
 
     void Die()
     {
-        speed = 0f; // Stop movement    
-        animator.SetTrigger("Die");
-        gameObject.layer = LayerMask.NameToLayer("deadenemie"); // Change layer to Default to avoid further collisions
-        Destroy(gameObject, 1.4f);
+        speed = 0f; // Stop movement
+        if (animator != null)
+        {
+            animator.SetTrigger("Die");
+            gameObject.layer = LayerMask.NameToLayer("deadenemie"); // Change layer
+            Destroy(gameObject, 1.4f);
+        }
+        else
+        {
+            if (segredo)
+            {
+                PlayerPrefs.SetInt("savedTu", 1);
+            }
+            Destroy(gameObject); // If no animator, just destroy immediately
+        }
     }
 }
