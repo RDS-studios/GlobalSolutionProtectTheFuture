@@ -103,7 +103,7 @@ public class GameSaver : MonoBehaviour
     {
         SaveState(); //   Salva antes de trocar de cena
         ChangePause();
-        SceneManager.LoadScene(2); // Lobby
+        SceneManager.LoadScene(14); // Lobby
     }
 
     public void ExitToMainMenu()

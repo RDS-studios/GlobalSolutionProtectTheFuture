@@ -2824,6 +2824,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 924153496441387221, guid: ff15176a4f783c64980401defb2277d4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 9.034724
+      objectReference: {fileID: 0}
+    - target: {fileID: 924153496441387221, guid: ff15176a4f783c64980401defb2277d4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 82
+      objectReference: {fileID: 0}
     - target: {fileID: 2356153915443444240, guid: ff15176a4f783c64980401defb2277d4, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -2882,6 +2890,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7073773633023514472, guid: ff15176a4f783c64980401defb2277d4, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7268977261943607383, guid: ff15176a4f783c64980401defb2277d4, type: 3}
+      propertyPath: m_PreserveAspect
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7684214430535406192, guid: ff15176a4f783c64980401defb2277d4, type: 3}

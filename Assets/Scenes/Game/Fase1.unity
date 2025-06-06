@@ -2670,7 +2670,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1adf0a0c669c3645b345132a8044a9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundType: 6
+  soundType: 15
 --- !u!61 &590789728
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4558,7 +4558,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1adf0a0c669c3645b345132a8044a9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundType: 8
+  soundType: 17
 --- !u!61 &1037212298
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6297,6 +6297,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 924153496441387221, guid: ff15176a4f783c64980401defb2277d4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 9.034724
+      objectReference: {fileID: 0}
+    - target: {fileID: 924153496441387221, guid: ff15176a4f783c64980401defb2277d4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 82
+      objectReference: {fileID: 0}
     - target: {fileID: 3291765439168324415, guid: ff15176a4f783c64980401defb2277d4, type: 3}
       propertyPath: m_Name
       value: DontDestroyOnLoad
@@ -6343,6 +6351,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6956638523889109802, guid: ff15176a4f783c64980401defb2277d4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7268977261943607383, guid: ff15176a4f783c64980401defb2277d4, type: 3}
+      propertyPath: m_PreserveAspect
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -7205,7 +7217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1adf0a0c669c3645b345132a8044a9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundType: 7
+  soundType: 16
 --- !u!61 &1561760775
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10828,6 +10840,10 @@ PrefabInstance:
     - target: {fileID: 1518096656191231, guid: b62fa63d85cb9f842b0ffedf4091afa5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6689668713367297427, guid: b62fa63d85cb9f842b0ffedf4091afa5, type: 3}
+      propertyPath: soundType
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 9139984841690729837, guid: b62fa63d85cb9f842b0ffedf4091afa5, type: 3}
       propertyPath: m_Name

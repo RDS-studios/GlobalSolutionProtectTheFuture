@@ -169,7 +169,7 @@ public class BossHead : MonoBehaviour
     {
          
         SoundManager.PlaySound(SoundType.TugoFase3Extintor);
-        yield return new WaitForSeconds(2.6f);
+        yield return new WaitForSeconds(7.2f);
         SoundManager.PlaySound(SoundType.tichoFase3Frase);
         waterAnimator.SetTrigger("enterScene");
     }
@@ -189,7 +189,7 @@ public class BossHead : MonoBehaviour
                 {
                     // Boss defeated logic here
                     print("Boss defeated!");
-                 SoundManager.PlaySound(SoundType.BossMorte);
+                  SoundManager.PlaySound(SoundType.BossMorte);
                 // You can add more logic here, like playing an animation or transitioning to a new scene.
             }
             
