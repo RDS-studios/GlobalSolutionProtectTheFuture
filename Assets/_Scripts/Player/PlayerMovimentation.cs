@@ -1,3 +1,4 @@
+using SmallHedge.SoundManager;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -121,7 +122,8 @@ public class PlayerMovimentation : MonoBehaviour
 
         if (currentTarget != null)
         {
-
+            StartCoroutine(HookCD());
+            SoundManager.PlaySound(SoundType.Gancho);
             Vector2 direction = (currentTarget.transform.position - transform.position).normalized;
 
             HookPoint hookShow = currentTarget.GetComponent<HookPoint>();
@@ -134,7 +136,7 @@ public class PlayerMovimentation : MonoBehaviour
             StartCoroutine(MoveHookToTarget(currentTarget.transform.position));
             playerStats.canMove = false;
             StartCoroutine(EnableMovementAfterDelay(0.6f));
-            StartCoroutine(HookCD());
+           
         }
     }
 

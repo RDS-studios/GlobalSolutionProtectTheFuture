@@ -53,7 +53,7 @@ public class fase1Manager : MonoBehaviour
         }
        if(npcSaved == 4)
         {
-            ender.canEndLevel = true; // Allow the level to end when all NPCs are saved
+            ender.canEndLevel = true;   
         }
          
     }

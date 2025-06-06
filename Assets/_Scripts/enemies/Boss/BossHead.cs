@@ -148,8 +148,8 @@ public class BossHead : MonoBehaviour
         }
         if (fase == 3)
         {
-            waterAnimator.SetTrigger("enterScene");
-            SoundManager.PlaySound(SoundType.tichoFase3Frase);
+           StartCoroutine(soudsFase3());
+
             leftHandScript.Burn();
             rightHandScript.Burn();
             print("Entrando na fase 3");
@@ -164,13 +164,24 @@ public class BossHead : MonoBehaviour
         }
     }
 
+
+    IEnumerator soudsFase3()
+    {
+         
+        SoundManager.PlaySound(SoundType.TugoFase3Extintor);
+        yield return new WaitForSeconds(2.6f);
+        SoundManager.PlaySound(SoundType.tichoFase3Frase);
+        waterAnimator.SetTrigger("enterScene");
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(isVulnerable && collision.gameObject.CompareTag("WaterJet"))
         {
            
-            
-                bossHP--;
+            SoundManager.PlaySound(SoundType.BossDano);
+
+            bossHP--;
             GlassSprite.SetActive(false);
             print("Boss HP: " + bossHP);
                
@@ -178,8 +189,9 @@ public class BossHead : MonoBehaviour
                 {
                     // Boss defeated logic here
                     print("Boss defeated!");
-                    // You can add more logic here, like playing an animation or transitioning to a new scene.
-                }
+                 SoundManager.PlaySound(SoundType.BossMorte);
+                // You can add more logic here, like playing an animation or transitioning to a new scene.
+            }
             
         }
     }

@@ -1,3 +1,4 @@
+using SmallHedge.SoundManager;
 using System.Collections;
 using UnityEngine;
 
@@ -83,7 +84,9 @@ public class EnemyScript : MonoBehaviour
         {
             animator.SetTrigger("Die");
             gameObject.layer = LayerMask.NameToLayer("deadenemie"); // Change layer
+            SoundManager.PlaySound(SoundType.InimigoMorte); // Play death sound
             Destroy(gameObject, 1.4f);
+            
         }
         else
         {

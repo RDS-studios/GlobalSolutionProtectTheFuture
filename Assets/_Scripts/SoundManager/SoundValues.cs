@@ -10,6 +10,18 @@ namespace SmallHedge.SoundManager
         BtnHover,
         Pulo,
         Esguicho,
+        Gancho,
+        Dano,
+        Morte,
+        Comer,
+        Curar,
+        Checkpoint,
+        InimigoMorte,
+        BossMorte,
+        BossDano,
+         
+        
+
         NarradorFase1Frase1,
         NarradorFase1Frase2,
         NarradorFase1Frase3,
@@ -22,16 +34,12 @@ namespace SmallHedge.SoundManager
 
 
 
-
         TichoFase1frase,
         tichoFase3Frase,
 
 
 
-
-
-
-
+ 
 
 
 

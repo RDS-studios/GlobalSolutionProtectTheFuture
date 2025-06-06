@@ -81,34 +81,36 @@ public class MenuFunction : MonoBehaviour
 
     public void PlayGame()
     {
+        SoundManager.PlaySound(SoundType.BtnMenu); // Play button sound
         SceneManager.LoadScene(2); // Load the game scene
-        sfxSource.Play(); // Optional: play feedback sound
+       
         
     }
 
     public void BackToMenu()
     {
-        sfxSource.Play(); // Optional feedback
+        SoundManager.PlaySound(SoundType.BtnMenu); // Play button sound
         // Add logic if needed
+        SceneManager.LoadScene(1); // Load the main menu scene  
     }
 
     public void EnterConfig()
     {
-        
-       configCanvas.SetActive(true); // Show configuration canvas   
+        SoundManager.PlaySound(SoundType.BtnMenu); // Play button sound
+        configCanvas.SetActive(true); // Show configuration canvas   
        // SoundManager.PlaySound(SoundType.BtnMenu); // Play button sound
     }
 
     public void ExitConfig()
     {
-        
+        SoundManager.PlaySound(SoundType.BtnMenu); // Play button sound
         configCanvas.SetActive(false); // Hide configuration canvas 
        // SoundManager.PlaySound(SoundType.BtnBack); // Play button sound
     }   
 
     public void QuitGame()
     {
-       
+        SoundManager.PlaySound(SoundType.BtnMenu); // Play button sound
         Application.Quit();
         //SoundManager.PlaySound(SoundType.BtnMenu); // Play button sound
     }
