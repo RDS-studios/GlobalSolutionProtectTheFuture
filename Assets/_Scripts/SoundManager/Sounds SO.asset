@@ -21,7 +21,8 @@ MonoBehaviour:
   - name: BtnBack
     volume: 1
     mixer: {fileID: 0}
-    sounds: []
+    sounds:
+    - {fileID: 8300000, guid: 378abaaf7ccb20848bc4ced7416eb473, type: 3}
   - name: BtnHover
     volume: 1
     mixer: {fileID: 0}
@@ -33,9 +34,10 @@ MonoBehaviour:
   - name: Esguicho
     volume: 1
     mixer: {fileID: 0}
-    sounds: []
+    sounds:
+    - {fileID: 8300000, guid: b1c08468e6e38104897e3ad53e75aad5, type: 3}
   - name: Gancho
-    volume: 1
+    volume: 0.64
     mixer: {fileID: 0}
     sounds:
     - {fileID: 8300000, guid: 8d5729e6d09fdff4c865e094192d259c, type: 3}
@@ -56,10 +58,10 @@ MonoBehaviour:
     volume: 1
     mixer: {fileID: 0}
     sounds:
-    - {fileID: 8300000, guid: d3e6a8dac6ca9d0438675db80f792e63, type: 3}
     - {fileID: 8300000, guid: b38d267e7ce657c4cba5cbc1e4a836e9, type: 3}
+    - {fileID: 8300000, guid: 21450ec3aa276f545a64ee02f2c3ef38, type: 3}
   - name: Curar
-    volume: 1
+    volume: 0.542
     mixer: {fileID: 0}
     sounds:
     - {fileID: 8300000, guid: b3a80bcd5c110224a958d9685aa63ff8, type: 3}
@@ -75,9 +77,11 @@ MonoBehaviour:
     sounds:
     - {fileID: 8300000, guid: 10dcb2b7a5c701340bce6be52ecc5ff7, type: 3}
   - name: BossMorte
-    volume: 1
+    volume: 0.701
     mixer: {fileID: 0}
-    sounds: []
+    sounds:
+    - {fileID: 8300000, guid: 8018e942a948f9348840e4b717061631, type: 3}
+    - {fileID: 8300000, guid: c24ec877c6e32e64eb41f5077db9d670, type: 3}
   - name: BossDano
     volume: 1
     mixer: {fileID: 0}

@@ -1,3 +1,4 @@
+using SmallHedge.SoundManager;
 using UnityEngine;
 
 public class Checkpoint : MonoBehaviour
@@ -39,6 +40,7 @@ public class Checkpoint : MonoBehaviour
                 playerStats = collision.GetComponent<PlayerStats>();
                 saved = true;
                 animator.SetTrigger("save"); // Trigger checkpoint animation
+                SoundManager.PlaySound(SoundType.Checkpoint); // Play checkpoint sound      
                 SaveStatus();
 
              

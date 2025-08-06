@@ -93,6 +93,7 @@ public class EnemyScript : MonoBehaviour
             if (segredo)
             {
                 PlayerPrefs.SetInt("savedTu", 1);
+                PlayerPrefs.Save();
             }
             Destroy(gameObject); // If no animator, just destroy immediately
         }

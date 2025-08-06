@@ -447,7 +447,20 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sheet_Protagonista_FINAL_IDLE-FullHD-Teste_1_0: 4125054408162591469
+      sheet_Protagonista_FINAL_IDLE-FullHD-Teste_1_1: -7264703138700618787
+      sheet_Protagonista_FINAL_IDLE-FullHD-Teste_1_10: 1320957974118182384
+      sheet_Protagonista_FINAL_IDLE-FullHD-Teste_1_11: 8338939706600214085
+      sheet_Protagonista_FINAL_IDLE-FullHD-Teste_1_12: -354131359152804601
+      sheet_Protagonista_FINAL_IDLE-FullHD-Teste_1_2: 2538117199316337070
+      sheet_Protagonista_FINAL_IDLE-FullHD-Teste_1_3: 6632716024758398002
+      sheet_Protagonista_FINAL_IDLE-FullHD-Teste_1_4: 8241505615035115480
+      sheet_Protagonista_FINAL_IDLE-FullHD-Teste_1_5: 2418810108707599339
+      sheet_Protagonista_FINAL_IDLE-FullHD-Teste_1_6: -1677965063374507566
+      sheet_Protagonista_FINAL_IDLE-FullHD-Teste_1_7: -1164274172356793359
+      sheet_Protagonista_FINAL_IDLE-FullHD-Teste_1_8: -3661999556564317758
+      sheet_Protagonista_FINAL_IDLE-FullHD-Teste_1_9: 7132278215367208383
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

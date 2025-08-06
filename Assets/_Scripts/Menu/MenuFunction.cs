@@ -20,7 +20,7 @@ public class MenuFunction : MonoBehaviour
 
 
     [SerializeField] GameObject configCanvas;
-
+    [SerializeField] GameObject secretsCanvas;
     private Resolution[] resolutions;
     private bool isFullScreen;
 
@@ -87,6 +87,26 @@ public class MenuFunction : MonoBehaviour
         
     }
 
+    public void Wipe()
+    {
+        SoundManager.PlaySound(SoundType.Morte); // Play button sound
+        PlayerPrefs.DeleteAll(); // Clear all saved data
+        Debug.Log("All saved data has been wiped.");
+        // Optionally, you can show a confirmation message or reload the scene
+    }
+    public void ShowSecrets()
+    {
+        SoundManager.PlaySound(SoundType.BtnMenu); // Play button sound
+        secretsCanvas.SetActive(true); // Show secrets canvas
+        // Optionally, you can initialize or update the secrets display here
+    }
+
+    public void HideSecrets()
+    {
+        SoundManager.PlaySound(SoundType.BtnMenu); // Play button sound
+        secretsCanvas.SetActive(false); // Hide secrets canvas
+        // Optionally, you can reset or clear the secrets display here
+    }
     public void BackToMenu()
     {
         SoundManager.PlaySound(SoundType.BtnMenu); // Play button sound

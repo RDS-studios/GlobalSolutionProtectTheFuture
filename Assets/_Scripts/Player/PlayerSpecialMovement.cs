@@ -34,11 +34,11 @@ public class PlayerSpecialMovement : MonoBehaviour
 
     IEnumerator lvl()
     {
-        yield return new WaitForSeconds(45);
+        yield return new WaitForSeconds(25);
         GameSaver gameSaver = GameObject.FindGameObjectWithTag("GameSaver").GetComponent<GameSaver>();
         gameSaver.CurtinaIn(); // Trigger the curtain animation after 50 seconds    
         yield return new WaitForSeconds(  .75f); // Wait for the curtain animation to finish
-        SceneManager.LoadScene(6);
+        SceneManager.LoadScene(9);
     }
 
     void Update()

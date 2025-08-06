@@ -13,7 +13,8 @@ public class Segredo : MonoBehaviour
         if(collision.gameObject.tag == "Player")
         {
 
-            PlayerPrefs.SetInt("segredo" + segredoNumber, 1);
+            PlayerPrefs.SetInt($"segredo{segredoNumber}"  , 1 );
+            PlayerPrefs.Save(); 
             Destroy(gameObject); 
             
         }

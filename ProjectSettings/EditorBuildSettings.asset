@@ -48,6 +48,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Game/Cutscene 7.unity
     guid: 2063f16498ef45f45b5150b92c386530
   - enabled: 1
+    path: Assets/Scenes/Game/Cutscene 8.unity
+    guid: e1d84917bbe367e4b8950895e73340b9
+  - enabled: 1
     path: Assets/Scenes/Game/Lobby.unity
     guid: 830b4285bc5b7dd42b42843055517bbd
   - enabled: 0

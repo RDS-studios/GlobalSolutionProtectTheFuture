@@ -5,43 +5,32 @@ using UnityEngine.SceneManagement;
 public class FaseSelector : MonoBehaviour
 {
     [SerializeField] int faseIndex = 0;
-    [SerializeField] bool hasUnlockedLevel;
+    public bool hasUnlockedLevel;
     [SerializeField] GameObject lockedIcon;
 
-    void Start()
+    
+
+        //void Start()
+        //{
+        //    hasUnlockedLevel = faseIndex switch
+        //    {
+        //        3 => true, // Always unlocked
+        //        4 => PlayerPrefs.GetInt("fase4Unlocked", 0) == 1,
+        //        5 => PlayerPrefs.GetInt("fase5Unlocked", 0) == 1,
+        //        _ => false
+        //    };
+
+        //   
+        //}
+
+     
+
+
+    private void Update()
     {
-        if (faseIndex == 3)
-        {
-            hasUnlockedLevel = true; // Level 3 is always unlocked
-        }
-        else if (faseIndex == 4)
-        {
-            hasUnlockedLevel = PlayerPrefs.GetInt("fase4Unlocked", 0) == 1;
 
-        }
-        else if (faseIndex == 5)
-        {
-
-
-            hasUnlockedLevel = PlayerPrefs.GetInt("fase5Unlocked", 0) == 1;
-
-
-
-        }
-        if (hasUnlockedLevel)
-        {
-            lockedIcon.SetActive(false); // Hide the locked icon if the level is unlocked
-        }
-        else
-        {
-            lockedIcon.SetActive(true); // Show the locked icon if the level is still locked
-
-        }
-
-        // Update is called once per frame
-      
+        lockedIcon.SetActive(!hasUnlockedLevel);
     }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))

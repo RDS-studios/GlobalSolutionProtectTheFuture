@@ -1,4 +1,5 @@
-using UnityEditor.SearchService;
+
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -10,6 +11,11 @@ public class GameSaver : MonoBehaviour
 
     [SerializeField] Animator animatorCortina;
 
+     
+    [SerializeField] FaseSelector faseSelector2;
+    [SerializeField] FaseSelector faseSelector3;
+
+
 
     public bool isPaused;
     public static GameSaver Instance;
@@ -20,6 +26,7 @@ public class GameSaver : MonoBehaviour
     [SerializeField] Animator animatorPauseMenu;
     [SerializeField] GameObject pauseMenuOBJ;
     [SerializeField] GameObject canvasUI;
+    [SerializeField] GameObject canvasConfig;
 
     //void OnEnable()
     //{
@@ -53,14 +60,11 @@ public class GameSaver : MonoBehaviour
 
         canvasUI?.SetActive(currentSceneIndex >= 2);
 
-        if (currentSceneIndex == 4)
-            PlayerPrefs.SetInt("fase4Unlocked", 1);
-
-        if (currentSceneIndex == 5)
-            PlayerPrefs.SetInt("fase5Unlocked", 1);
+        
+           
 
         
-         
+
 
         LoadState(); //   Carrega os dados do jogador no início
     }
@@ -91,6 +95,11 @@ public class GameSaver : MonoBehaviour
 
         if (animatorPauseMenu != null)
             animatorPauseMenu.SetBool("isPaused", isPaused);
+
+        if(isPaused == false)
+        {
+            canvasConfig.SetActive(false);  
+        }
     }
 
     public void ChangePause()
@@ -103,7 +112,7 @@ public class GameSaver : MonoBehaviour
     {
         SaveState(); //   Salva antes de trocar de cena
         ChangePause();
-        SceneManager.LoadScene(14); // Lobby
+        SceneManager.LoadScene(15); // Lobby
     }
 
     public void ExitToMainMenu()
@@ -148,5 +157,45 @@ public class GameSaver : MonoBehaviour
         stats.hasWaterJet = PlayerPrefs.GetInt("HasWaterJet", 0) == 1;
 
         Debug.Log("Jogo carregado.");
+        int ammo = PlayerPrefs.GetInt("PlayerAmmo", 0);
+        int hasWaterJet = PlayerPrefs.GetInt("HasWaterJet", 0); // 0 ou 1   
+
+        Debug.Log($"Ammo: {ammo}, HasWaterJet: {hasWaterJet}");
+        
+        
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+
+        if (currentSceneIndex == 6) // Fase 3 completed, unlock Fase 4
+        {
+            PlayerPrefs.SetInt("fase4Unlocked", 1);
+            Debug.Log("Fase 4 desbloqueada!");
+        }
+        else if (currentSceneIndex == 9) // Fase 4 completed, unlock Fase 5
+        {
+            PlayerPrefs.SetInt("fase5Unlocked", 1);
+            Debug.Log("Fase 5 desbloqueada!");
+        }
+
+
+
+        if(currentSceneIndex == 15)
+        {
+            int fase4Unlocked = PlayerPrefs.GetInt("fase4Unlocked", 0);
+            int fase5Unlocked = PlayerPrefs.GetInt("fase5Unlocked", 0); 
+            if (fase4Unlocked == 1)
+            {
+                Debug.Log("Desbloqueando Fase 4 no seletor de fases.");
+                faseSelector2.hasUnlockedLevel = true;
+            }
+
+
+            if(fase5Unlocked == 1)
+            {
+                Debug.Log("Desbloqueando Fase 5 no seletor de fases.");
+                faseSelector3.hasUnlockedLevel = true;
+            }
+        }
+
+        PlayerPrefs.Save(); //  Save immediately
     }
 }

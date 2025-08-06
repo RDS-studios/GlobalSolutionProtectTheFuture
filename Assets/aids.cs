@@ -1,19 +1,41 @@
-using SmallHedge.SoundManager;
-using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.Video;
 
 public class aids : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public VideoPlayer videoPlayer;
+    public int nextSceneIndexOffset = 1;
+
     void Start()
     {
-        StartCoroutine(enumerator());
+        if (videoPlayer == null)
+        {
+            videoPlayer = GetComponent<VideoPlayer>();
+        }
+
+        if (videoPlayer != null)
+        {
+            videoPlayer.loopPointReached += OnVideoEnd;
+        }
+        else
+        {
+            Debug.LogError("VideoPlayer not assigned and not found on this GameObject.");
+        }
     }
 
-    // Update is called once per frame
-   IEnumerator enumerator()
+    void OnVideoEnd(VideoPlayer vp)
     {
-        yield return new WaitForSeconds(4f);
-        SoundManager.PlaySound(SoundType.Gancho);
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        int nextSceneIndex = currentSceneIndex + nextSceneIndexOffset;
+
+        if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
+        {
+            SceneManager.LoadScene(nextSceneIndex);
+        }
+        else
+        {
+            Debug.LogWarning("No next scene in Build Settings.");
+        }
     }
 }

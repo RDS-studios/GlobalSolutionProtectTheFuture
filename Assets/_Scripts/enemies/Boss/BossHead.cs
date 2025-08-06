@@ -2,6 +2,7 @@ using SmallHedge.SoundManager;
 using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BossHead : MonoBehaviour
 {
@@ -189,11 +190,24 @@ public class BossHead : MonoBehaviour
                 {
                     // Boss defeated logic here
                     print("Boss defeated!");
-                  SoundManager.PlaySound(SoundType.BossMorte);
+                 
+                 StartCoroutine(EndBoss()); // Call the EndBoss coroutine to handle the end of the boss fight   
                 // You can add more logic here, like playing an animation or transitioning to a new scene.
             }
             
         }
+    }
+
+
+
+
+    IEnumerator EndBoss()
+    {
+        SoundManager.PlaySound(SoundType.BossMorte);
+        GameSaver saver = GameObject.FindGameObjectWithTag("GameSaver").GetComponent<GameSaver>();
+        saver.CurtinaIn(); // Trigger the curtain animation after boss defeat
+        yield return new WaitForSeconds(1.5f); // Wait for the curtain animation to finish
+        SceneManager.LoadScene(12);
     }
 }
 
